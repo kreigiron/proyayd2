@@ -125,5 +125,17 @@ public class Casilla {
         this.terreno = val;
     }
 
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.D44584E3-D10F-403F-C59C-F5B5CC506280]
+    // </editor-fold> 
+    public void moverA (Casilla dest) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.3A1C2801-A374-2CC6-7A9F-8F195936B340]
+    // </editor-fold> 
+    public void atacarA (Casilla dest) {
+    }
+
 }
 

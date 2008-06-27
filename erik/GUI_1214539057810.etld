@@ -42,9 +42,9 @@
                         </node>
                         <node id="5">
                             <name/>
-                            <center x="213.0" y="-9.5"/>
-                            <size height="323.0" width="260.0"/>
-                            <originalSize height="323.0" width="260.0"/>
+                            <center x="213.0" y="-27.5"/>
+                            <size height="359.0" width="260.0"/>
+                            <originalSize height="359.0" width="260.0"/>
                             <shape resource="0"/>
                             <url/>
                             <visible value="true"/>

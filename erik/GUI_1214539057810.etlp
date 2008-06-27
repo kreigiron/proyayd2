@@ -1224,7 +1224,7 @@
       <entry fontholderid="1" name="SansSerif" CharSet="0" Height="12" Italic="false" Strikeout="false" Underline="false" Weight="400"/>
     </FontHolderTable>
   </resources>
-  <diagramInfo zoom="1.0" xPos="-8.0" yPos="-54.0" name="GUI" alias="" docs="" diagramKind="Class Diagram" lastShowAliasState="false" namespaceToplevelID="DCE.05B4C3D0-D45E-0494-1F23-D22F2B36E0C2" namespaceMEID="DCE.B98DD80C-5351-6620-4111-8DB7211D0400" diagramXMIID="DCE.466070B9-5E14-725A-95B1-A551B380F523"/>
+  <diagramInfo zoom="1.0" xPos="-8.0" yPos="-63.0" name="GUI" alias="" docs="" diagramKind="Class Diagram" lastShowAliasState="false" namespaceToplevelID="DCE.05B4C3D0-D45E-0494-1F23-D22F2B36E0C2" namespaceMEID="DCE.B98DD80C-5351-6620-4111-8DB7211D0400" diagramXMIID="DCE.466070B9-5E14-725A-95B1-A551B380F523"/>
   <DCE.0FEF53FE-BEAC-D4EF-C3D3-52D613BF9629 PEID="DCE.0FEF53FE-BEAC-D4EF-C3D3-52D613BF9629" MEID="DCE.8621BE25-041D-3601-79CB-E7FC72F09EFF" toplevelMEID="DCE.05B4C3D0-D45E-0494-1F23-D22F2B36E0C2" initString="org.netbeans.modules.uml.ui.products.ad.viewfactory.ETGenericNodeUI Class">
     <engine name="ClassDrawEngine" editLocked="false">
       <resources>
@@ -1249,7 +1249,7 @@
       </compartment>
       <compartment name="3" value="Attributes" textStyles="VCENTER|HCENTER|SINGLELINE">
         <resources/>
-        <compartment name="4" MEID="DCE.BC99EACF-7D0B-85FC-9804-EA81305A63F7" value="private Casilla casillas[10,10]" textStyles="VCENTER|SINGLELINE" nameCompartmentBorderKind="0">
+        <compartment name="4" MEID="DCE.BC99EACF-7D0B-85FC-9804-EA81305A63F7" value="private Casilla casillas[10,10]" textStyles="VCENTER|SINGLELINE" nameCompartmentBorderKind="0" isStatic="1">
           <resources>
             <resource type="font" resourceStringID="13" fontID="9"/>
             <resource type="color" resourceStringID="13" colorID="12"/>
@@ -1392,6 +1392,18 @@
             <resource type="color" resourceStringID="16" colorID="15"/>
           </resources>
         </compartment>
+        <compartment name="6" MEID="DCE.D44584E3-D10F-403F-C59C-F5B5CC506280" value="public void  moverA( Casilla dest )" textStyles="VCENTER|SINGLELINE" nameCompartmentBorderKind="0">
+          <resources>
+            <resource type="font" resourceStringID="16" fontID="12"/>
+            <resource type="color" resourceStringID="16" colorID="15"/>
+          </resources>
+        </compartment>
+        <compartment name="6" MEID="DCE.3A1C2801-A374-2CC6-7A9F-8F195936B340" value="public void  atacarA( Casilla dest )" textStyles="VCENTER|SINGLELINE" nameCompartmentBorderKind="0">
+          <resources>
+            <resource type="font" resourceStringID="16" fontID="12"/>
+            <resource type="color" resourceStringID="16" colorID="15"/>
+          </resources>
+        </compartment>
       </compartment>
     </engine>
   </DCE.A7CF3C2E-7395-6FD1-C2E0-3D7D72A0D5FC>
@@ -1434,13 +1446,13 @@
             <resource type="color" resourceStringID="16" colorID="15"/>
           </resources>
         </compartment>
-        <compartment name="6" MEID="DCE.7FF74B82-143E-7E55-8F31-22F57B7DA6A2" value="public Elemento  getE(  )" textStyles="VCENTER|SINGLELINE" nameCompartmentBorderKind="0">
+        <compartment name="6" MEID="DCE.10DE2970-6CC7-AC9A-D926-E68AA79A8474" value="public Elemento  getE(  )" textStyles="VCENTER|SINGLELINE" nameCompartmentBorderKind="0">
           <resources>
             <resource type="font" resourceStringID="16" fontID="12"/>
             <resource type="color" resourceStringID="16" colorID="15"/>
           </resources>
         </compartment>
-        <compartment name="6" MEID="DCE.F081B4CE-0056-6731-B13A-9E6FF781AF26" value="public void  setE( Elemento val )" textStyles="VCENTER|SINGLELINE" nameCompartmentBorderKind="0">
+        <compartment name="6" MEID="DCE.3AAA4040-9795-112E-B430-2B491884B94B" value="public void  setE( Elemento val )" textStyles="VCENTER|SINGLELINE" nameCompartmentBorderKind="0">
           <resources>
             <resource type="font" resourceStringID="16" fontID="12"/>
             <resource type="color" resourceStringID="16" colorID="15"/>

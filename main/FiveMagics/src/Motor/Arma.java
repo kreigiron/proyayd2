@@ -17,7 +17,7 @@ package Motor;
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.E33659C5-9DC9-4BC1-E0A5-340A38133848]
 // </editor-fold> 
-public abstract class Arma {
+public class Arma {
 
     /**
      *  <html>
@@ -90,7 +90,7 @@ public abstract class Arma {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.B35B8BE1-F9F8-E536-F791-0549A72F1B20]
     // </editor-fold> 
-    public void atacar () {
+    public abstract void atacar ();{
     }
 
 }
