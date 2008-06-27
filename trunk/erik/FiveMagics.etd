@@ -749,11 +749,13 @@
 
 <UML:Operation xmi.id="DCE.B35B8BE1-F9F8-E536-F791-0549A72F1B20" name="atacar" owner="DCE.E33659C5-9DC9-4BC1-E0A5-340A38133848" redefiningElement="DCE.74912CD9-2E68-A434-ED61-4B920F84190B"><UML:Element.ownedElement>
 <UML:Parameter xmi.id="DCE.6BDB1785-5EA6-F9DB-D25B-6BC2A93A5341" type="DCE.74F386C7-07AD-849C-FB42-AE33E3345FC7" direction="result" owner="DCE.B35B8BE1-F9F8-E536-F791-0549A72F1B20"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.6A522A38-D10F-F5E9-FC55-88C01F3FD15D"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement></UML:Class>
+<UML:Multiplicity xmi.id="DCE.6A522A38-D10F-F5E9-FC55-88C01F3FD15D"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation>
+<UML:SourceFileArtifact xmi.id="DCE.CB341434-8D00-B966-6604-3F5C6A9322A3" name="Unnamed" owner="DCE.E33659C5-9DC9-4BC1-E0A5-340A38133848" sourcefile="../main/FiveMagics/src/Motor/Arma.java"/></UML:Element.ownedElement></UML:Class>
 
 <UML:Class xmi.id="DCE.79C8BF81-5515-6479-5EAD-E7576071C546" name="Personaje" owner="DCE.428FAFB6-4894-018D-AA5F-90F2A2D60D08" isAbstract="true"><UML:Element.presentation>
 </UML:Element.presentation><UML:Element.ownedElement>
-<UML:Operation xmi.id="DCE.13FE09B3-0DE8-A098-2016-425293BFD434" name="Personaje" isConstructor="true" owner="DCE.79C8BF81-5515-6479-5EAD-E7576071C546"/></UML:Element.ownedElement></UML:Class>
+<UML:Operation xmi.id="DCE.13FE09B3-0DE8-A098-2016-425293BFD434" name="Personaje" isConstructor="true" owner="DCE.79C8BF81-5515-6479-5EAD-E7576071C546"/>
+<UML:SourceFileArtifact xmi.id="DCE.A047FC46-0903-A9D6-DE5C-AC9F66E0ACDE" name="Unnamed" owner="DCE.79C8BF81-5515-6479-5EAD-E7576071C546" sourcefile="../main/FiveMagics/src/Motor/Personaje.java"/></UML:Element.ownedElement></UML:Class>
 <UML:Class xmi.id="DCE.E6A2BA8F-016E-4977-61E6-0C9BC6AB7BC4" name="Elemento" owner="DCE.428FAFB6-4894-018D-AA5F-90F2A2D60D08" isAbstract="true"><UML:Element.presentation>
 </UML:Element.presentation><UML:Element.ownedElement>
 <UML:Operation xmi.id="DCE.E5CF200D-1BFB-42D4-4556-403FE14D4678" name="Elemento" isConstructor="true" owner="DCE.E6A2BA8F-016E-4977-61E6-0C9BC6AB7BC4"/>
@@ -866,7 +868,8 @@
 <UML:Multiplicity xmi.id="DCE.E0DC0226-8BD9-64E9-EF7B-39524C4F7993" isOrdered="true"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation>
 <UML:Operation xmi.id="DCE.74912CD9-2E68-A434-ED61-4B920F84190B" name="atacar" isQuery="false" redefinedElement="DCE.B35B8BE1-F9F8-E536-F791-0549A72F1B20" owner="DCE.E6A2BA8F-016E-4977-61E6-0C9BC6AB7BC4"><UML:Element.ownedElement>
 <UML:Parameter xmi.id="DCE.0CB1237A-16F4-2C6A-519D-3C4B6354B729" type="DCE.74F386C7-07AD-849C-FB42-AE33E3345FC7" direction="result" owner="DCE.74912CD9-2E68-A434-ED61-4B920F84190B"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.6D53421B-D6F5-DD92-7F49-48C02A2E47A4"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement><UML:Classifier.generalization>
+<UML:Multiplicity xmi.id="DCE.6D53421B-D6F5-DD92-7F49-48C02A2E47A4"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation>
+<UML:SourceFileArtifact xmi.id="DCE.0786B4B5-2846-AC03-C0F6-6649D8EA2228" name="Unnamed" owner="DCE.E6A2BA8F-016E-4977-61E6-0C9BC6AB7BC4" sourcefile="../main/FiveMagics/src/Motor/Elemento.java"/></UML:Element.ownedElement><UML:Classifier.generalization>
 <UML:Generalization xmi.id="DCE.9A77BEFF-DAE5-4552-3CAA-603B73033BB0" specific="DCE.E6A2BA8F-016E-4977-61E6-0C9BC6AB7BC4" general="DCE.E33659C5-9DC9-4BC1-E0A5-340A38133848"><UML:Element.presentation>
 </UML:Element.presentation></UML:Generalization></UML:Classifier.generalization></UML:Class>
 <UML:Interface xmi.id="DCE.ADB19E0A-C336-08FA-5675-79D10E141A11" name="Movible" isAbstract="true" owner="DCE.428FAFB6-4894-018D-AA5F-90F2A2D60D08" appliedStereotype="__uri_./.\FiveMagics.etup#//*[@xmi.id=&quot;DCE.9BD9F6FF-5C0D-85B5-4718-950EB55141FD&quot;]"><UML:Element.presentation>
@@ -878,7 +881,8 @@
 <UML:Parameter xmi.id="DCE.DC97CC67-C3C6-60BC-5DCD-638AFF3F762D" type="DCE.EB64587E-C5B6-7388-70F0-655A6A7EB8FA" name="direccion" owner="DCE.15AC503A-EBCA-2C27-32D3-3DCDC6FA7F79"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.9A65780A-2C68-0A56-D7ED-A96313AF0414"/></UML:TypedElement.multiplicity></UML:Parameter>
 <UML:Parameter xmi.id="DCE.418B2F9B-52DA-765C-FC8B-E9E248F05BFE" type="DCE.EB64587E-C5B6-7388-70F0-655A6A7EB8FA" name="pasos" owner="DCE.15AC503A-EBCA-2C27-32D3-3DCDC6FA7F79"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.5045937F-E12D-F2FE-24AC-73E5E9789597"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement></UML:Interface>
+<UML:Multiplicity xmi.id="DCE.5045937F-E12D-F2FE-24AC-73E5E9789597"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation>
+<UML:SourceFileArtifact xmi.id="DCE.785068DE-AC13-0337-3DB6-7B365837A0EE" name="Unnamed" owner="DCE.ADB19E0A-C336-08FA-5675-79D10E141A11" sourcefile="../main/FiveMagics/src/Motor/Movible.java"/></UML:Element.ownedElement></UML:Interface>
 <UML:Class xmi.id="DCE.CAE0DC72-2F3C-8233-7443-AAE075D86640" name="Unnamed" owner="DCE.428FAFB6-4894-018D-AA5F-90F2A2D60D08"><UML:Element.presentation>
 </UML:Element.presentation></UML:Class></UML:Element.ownedElement></UML:Package>
 <UML:DataType xmi.id="DCE.74F386C7-07AD-849C-FB42-AE33E3345FC7" name="void" owner="DCE.05B4C3D0-D45E-0494-1F23-D22F2B36E0C2"/>
@@ -931,7 +935,8 @@
 
 
 <UML:MultiplicityRange xmi.id="DCE.1024092E-4B6F-BE22-04B6-B3BC43404470" lower="10" upper="10" collectionType=""/>
-<UML:MultiplicityRange xmi.id="DCE.7A43B37C-2759-0794-F45C-484B50EDB966" lower="10" upper="10" collectionType=""/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement></UML:Class>
+<UML:MultiplicityRange xmi.id="DCE.7A43B37C-2759-0794-F45C-484B50EDB966" lower="10" upper="10" collectionType=""/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation>
+<UML:SourceFileArtifact xmi.id="DCE.3252067B-241F-66F3-E65C-02E5DFCCA022" name="Unnamed" owner="DCE.8621BE25-041D-3601-79CB-E7FC72F09EFF" sourcefile="../main/FiveMagics/src/gui/Tablero.java"/></UML:Element.ownedElement></UML:Class>
 <UML:Class xmi.id="DCE.23A9F0DA-D4BD-D49A-B0CC-2BCEB341765A" name="Casilla" owner="DCE.B98DD80C-5351-6620-4111-8DB7211D0400"><UML:Element.presentation>
 </UML:Element.presentation><UML:Element.ownedElement>
 <UML:Operation xmi.id="DCE.4184E083-1757-8E25-B7B1-4CBFF8D1B1E5" name="Casilla" isConstructor="true" owner="DCE.23A9F0DA-D4BD-D49A-B0CC-2BCEB341765A"/>
@@ -1022,7 +1027,8 @@
 <UML:Parameter xmi.id="DCE.920BF7C9-2267-46A1-D4BD-BEDE87B26248" type="DCE.74F386C7-07AD-849C-FB42-AE33E3345FC7" direction="result" owner="DCE.83D10EFE-7DA7-2F55-2ECB-30DC29BDE575"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.A54A21D0-A308-DBE1-7A8C-09276DC9824F"/></UML:TypedElement.multiplicity></UML:Parameter>
 <UML:Parameter xmi.id="DCE.6BCE522A-2BE2-8A5A-7514-B33F78736586" type="DCE.ADB19E0A-C336-08FA-5675-79D10E141A11" name="val" owner="DCE.83D10EFE-7DA7-2F55-2ECB-30DC29BDE575"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.14AD04DE-F10B-50BE-5C74-7908D0A199CE"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement></UML:Class>
+<UML:Multiplicity xmi.id="DCE.14AD04DE-F10B-50BE-5C74-7908D0A199CE"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation>
+<UML:SourceFileArtifact xmi.id="DCE.313B627A-4389-CAB8-3E5D-CA76699DD4CC" name="Unnamed" owner="DCE.23A9F0DA-D4BD-D49A-B0CC-2BCEB341765A" sourcefile="../main/FiveMagics/src/gui/Casilla.java"/></UML:Element.ownedElement></UML:Class>
 <UML:Class xmi.id="DCE.9F7AAAA7-99E9-694B-6E5C-D81F4D21BAC9" name="Terreno" owner="DCE.B98DD80C-5351-6620-4111-8DB7211D0400"><UML:Element.presentation>
 </UML:Element.presentation><UML:Element.ownedElement>
 <UML:Operation xmi.id="DCE.A96D663E-4F85-CA9F-BC4A-16DE69687938" name="Terreno" isConstructor="true" owner="DCE.9F7AAAA7-99E9-694B-6E5C-D81F4D21BAC9"/>
@@ -1050,7 +1056,8 @@
 <UML:Parameter xmi.id="DCE.C6A3C5D6-DEF7-45C0-CBA0-A0D4D05FFA59" type="DCE.74F386C7-07AD-849C-FB42-AE33E3345FC7" direction="result" owner="DCE.F081B4CE-0056-6731-B13A-9E6FF781AF26"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.34B9A79F-BD9A-C7EE-BB47-C1171FA6EE27"/></UML:TypedElement.multiplicity></UML:Parameter>
 <UML:Parameter xmi.id="DCE.6CE01B2C-7C17-D627-7D8E-FA2769B5C995" type="DCE.CA87AAF1-6D87-111F-9E08-274E95BE7583" name="val" owner="DCE.F081B4CE-0056-6731-B13A-9E6FF781AF26"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.0C2A22F6-E130-F941-7A98-956841518673"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement></UML:Class>
+<UML:Multiplicity xmi.id="DCE.0C2A22F6-E130-F941-7A98-956841518673"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation>
+<UML:SourceFileArtifact xmi.id="DCE.0D6B8203-DFD4-10B6-E5A9-E81A88338ED3" name="Unnamed" owner="DCE.9F7AAAA7-99E9-694B-6E5C-D81F4D21BAC9" sourcefile="../main/FiveMagics/src/gui/Terreno.java"/></UML:Element.ownedElement></UML:Class>
 <UML:DataType xmi.id="DCE.AA5F0E31-0922-2A68-2325-ACFE75F772AF" name="Terrento" owner="DCE.B98DD80C-5351-6620-4111-8DB7211D0400"/></UML:Element.ownedElement></UML:Package></UML:Element.ownedElement><UML:Package.packageImport>
 <UML:PackageImport xmi.id="DCE.86F77605-543F-0BD7-64C6-01D2FF88C333" importingPackage="DCE.05B4C3D0-D45E-0494-1F23-D22F2B36E0C2"><UML:PackageImport.importedPackage>
 <UML:Profile xmi.id="DCE.DDDD1A36-AF56-BA70-0DB0-1A75AF266213" name="Unnamed" isCloned="true" href="./.\FiveMagics.etup#//*[@xmi.id=&apos;DCE.DDDD1A36-AF56-BA70-0DB0-1A75AF266213&apos;]" isDirty="true"><UML:Element.ownedElement>
