@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="WINDOWS-1252"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <TSX edition="Java Edition" product="Tom Sawyer Visualization" version="6.0.1">
     <graphManager id="2">
         <resources>
@@ -126,12 +126,30 @@
                 </graph>
                 <graph id="9">
                     <name/>
+                    <margins>
+                        <proportional bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+                        <constant bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                    </margins>
+                    <url/>
+                    <graphics type="basicGraph">
+                        <backgroundColor value="255 255 255"/>
+                        <imageUsed/>
+                        <imageTiled value="false"/>
+                        <imageStyle value="WORLD_OFFSET"/>
+                        <imageMinTileStep value="25"/>
+                        <imageX value="0.0"/>
+                        <imageY value="0.0"/>
+                        <drawNodesBeforeEdges value="true"/>
+                    </graphics>
+                </graph>
+                <graph id="10">
+                    <name/>
                     <nodes>
-                        <node id="10">
+                        <node id="11">
                             <name/>
-                            <center x="-119.0" y="196.0"/>
-                            <size height="314.0" width="273.0"/>
-                            <originalSize height="314.0" width="273.0"/>
+                            <center x="-118.4069999999999" y="201.9314999999999"/>
+                            <size height="302.1370000000002" width="274.1860000000002"/>
+                            <originalSize height="302.1370000000002" width="274.1860000000002"/>
                             <shape resource="0"/>
                             <url/>
                             <visible value="true"/>
@@ -148,10 +166,10 @@
                                 <PEID value="DCE.3CC5F5BD-E79E-5C59-62AA-39250BCC05ED"/>
                             </graphics>
                         </node>
-                        <node id="11">
+                        <node id="12">
                             <name/>
-                            <center x="167.5" y="34.5"/>
-                            <size height="127.0" width="157.0"/>
+                            <center x="203.437" y="276.7420000000002"/>
+                            <size height="127.0" width="156.99999999999997"/>
                             <originalSize height="127.0" width="157.0"/>
                             <shape resource="0"/>
                             <url/>
@@ -169,7 +187,7 @@
                                 <PEID value="DCE.81982733-8748-CCBD-9BEB-036BE7E08F1A"/>
                             </graphics>
                         </node>
-                        <node id="12">
+                        <node id="13">
                             <name/>
                             <center x="-127.62" y="-97.36700000000002"/>
                             <size height="145.0" width="266.0"/>
@@ -190,7 +208,7 @@
                                 <PEID value="DCE.305033D9-9370-6932-BECB-673AA9C7543F"/>
                             </graphics>
                         </node>
-                        <node id="13">
+                        <node id="14">
                             <name/>
                             <center x="-423.76800000000003" y="-238.18199999999996"/>
                             <size height="325.0" width="255.0"/>
@@ -211,11 +229,11 @@
                                 <PEID value="DCE.1A7BD26A-C5D9-DB6D-93A4-715571BA784A"/>
                             </graphics>
                         </node>
-                        <node id="14">
+                        <node id="15">
                             <name/>
-                            <center x="442.7725000000001" y="-208.52300000000008"/>
-                            <size height="364.6940000000002" width="240.91100000000017"/>
-                            <originalSize height="364.69400000000024" width="240.91100000000017"/>
+                            <center x="453.4205000000001" y="-204.53000000000011"/>
+                            <size height="356.70800000000025" width="262.2070000000002"/>
+                            <originalSize height="356.70800000000025" width="262.2070000000002"/>
                             <shape resource="0"/>
                             <url/>
                             <visible value="true"/>
@@ -232,7 +250,7 @@
                                 <PEID value="DCE.CC90C609-22E7-1670-25F4-D89D5181766F"/>
                             </graphics>
                         </node>
-                        <node id="15">
+                        <node id="16">
                             <name/>
                             <center x="492.8287999999998" y="197.77940000000012"/>
                             <size height="325.0" width="281.0"/>
@@ -253,11 +271,11 @@
                                 <PEID value="DCE.F1B435C3-2ED6-9D39-8102-6C4C4B6E732A"/>
                             </graphics>
                         </node>
-                        <node id="16">
+                        <node id="17">
                             <name/>
-                            <center x="845.282" y="-667.3409999999999"/>
-                            <size height="403.0" width="258.0"/>
-                            <originalSize height="403.0" width="258.0"/>
+                            <center x="846.0545000000002" y="-662.1635"/>
+                            <size height="392.6450000000002" width="259.5450000000002"/>
+                            <originalSize height="392.6450000000002" width="259.5450000000002"/>
                             <shape resource="0"/>
                             <url/>
                             <visible value="true"/>
@@ -274,7 +292,7 @@
                                 <PEID value="DCE.213EB459-E3BA-0F58-1D8E-1C11F7A3C3A4"/>
                             </graphics>
                         </node>
-                        <node id="17">
+                        <node id="18">
                             <name/>
                             <center x="553.4458" y="-702.9285999999998"/>
                             <size height="353.0" width="259.0"/>
@@ -295,7 +313,7 @@
                                 <PEID value="DCE.0DE9E3A5-F726-13C8-3D21-3C55D6F69C22"/>
                             </graphics>
                         </node>
-                        <node id="18">
+                        <node id="19">
                             <name/>
                             <center x="-13.171200000000198" y="-683.2205999999999"/>
                             <size height="163.0" width="243.00000000000006"/>
@@ -316,7 +334,7 @@
                                 <PEID value="DCE.D6D54271-B940-BAF3-BCBC-C85FDA0CE41C"/>
                             </graphics>
                         </node>
-                        <node id="19">
+                        <node id="20">
                             <name/>
                             <center x="240.6115000000001" y="-839.5015000000003"/>
                             <size height="275.51700000000005" width="251.5590000000002"/>
@@ -339,7 +357,7 @@
                         </node>
                     </nodes>
                     <edges>
-                        <edge id="20" source="10" target="11">
+                        <edge id="21" source="11" target="12">
                             <sourceClipping/>
                             <targetClipping/>
                             <url/>
@@ -355,23 +373,7 @@
                                 <PEID value="DCE.8D4F74B8-1862-B12A-2D7F-7D97C9C485DB"/>
                             </graphics>
                         </edge>
-                        <edge id="21" source="14" target="11">
-                            <sourceClipping/>
-                            <targetClipping/>
-                            <url/>
-                            <visible value="true"/>
-                            <graphics type="relationEdge">
-                                <lineColor value="0 0 0"/>
-                                <arrowWidth value="6.0"/>
-                                <arrowHeight value="6.0"/>
-                                <arrowType value="NO_ARROW"/>
-                                <bendWidth value="5.0"/>
-                                <bendHeight value="5.0"/>
-                                <antiAliasing value="false"/>
-                                <PEID value="DCE.42491756-B27A-A564-0D16-D6573D973975"/>
-                            </graphics>
-                        </edge>
-                        <edge id="22" source="10" target="12">
+                        <edge id="22" source="11" target="13">
                             <sourceClipping/>
                             <targetClipping/>
                             <url/>
@@ -387,71 +389,7 @@
                                 <PEID value="DCE.5FF571D9-0354-78C8-B1EA-C29140B1DEE4"/>
                             </graphics>
                         </edge>
-                        <edge id="23" source="16" target="14">
-                            <sourceClipping/>
-                            <targetClipping/>
-                            <url/>
-                            <visible value="true"/>
-                            <graphics type="relationEdge">
-                                <lineColor value="0 0 0"/>
-                                <arrowWidth value="6.0"/>
-                                <arrowHeight value="6.0"/>
-                                <arrowType value="NO_ARROW"/>
-                                <bendWidth value="5.0"/>
-                                <bendHeight value="5.0"/>
-                                <antiAliasing value="false"/>
-                                <PEID value="DCE.27DCFA47-7019-C16C-1BB2-79E883CBCCE1"/>
-                            </graphics>
-                        </edge>
-                        <edge id="24" source="17" target="14">
-                            <sourceClipping/>
-                            <targetClipping/>
-                            <url/>
-                            <visible value="true"/>
-                            <graphics type="relationEdge">
-                                <lineColor value="0 0 0"/>
-                                <arrowWidth value="6.0"/>
-                                <arrowHeight value="6.0"/>
-                                <arrowType value="NO_ARROW"/>
-                                <bendWidth value="5.0"/>
-                                <bendHeight value="5.0"/>
-                                <antiAliasing value="false"/>
-                                <PEID value="DCE.3667E80E-5AC6-D8B8-1BC6-BB693DD5C44E"/>
-                            </graphics>
-                        </edge>
-                        <edge id="25" source="13" target="18">
-                            <sourceClipping/>
-                            <targetClipping/>
-                            <url/>
-                            <visible value="true"/>
-                            <graphics type="relationEdge">
-                                <lineColor value="0 0 0"/>
-                                <arrowWidth value="6.0"/>
-                                <arrowHeight value="6.0"/>
-                                <arrowType value="NO_ARROW"/>
-                                <bendWidth value="5.0"/>
-                                <bendHeight value="5.0"/>
-                                <antiAliasing value="false"/>
-                                <PEID value="DCE.B44E99ED-BD6C-C2DA-F48F-6C235EB4B663"/>
-                            </graphics>
-                        </edge>
-                        <edge id="26" source="13" target="14">
-                            <sourceClipping/>
-                            <targetClipping/>
-                            <url/>
-                            <visible value="true"/>
-                            <graphics type="relationEdge">
-                                <lineColor value="0 0 0"/>
-                                <arrowWidth value="6.0"/>
-                                <arrowHeight value="6.0"/>
-                                <arrowType value="NO_ARROW"/>
-                                <bendWidth value="5.0"/>
-                                <bendHeight value="5.0"/>
-                                <antiAliasing value="false"/>
-                                <PEID value="DCE.41A1641C-5FB5-D51E-A5EE-232CAC93BAE5"/>
-                            </graphics>
-                        </edge>
-                        <edge id="27" source="13" target="10">
+                        <edge id="23" source="14" target="11">
                             <sourceClipping/>
                             <targetClipping/>
                             <url/>
@@ -467,9 +405,9 @@
                                 <PEID value="DCE.AAA8565C-0561-7047-BFBA-8B53C6393B3B"/>
                             </graphics>
                         </edge>
-                        <edge id="28" source="19" target="14">
-                            <sourceClipping x="0.5" y="0.481852299495131"/>
-                            <targetClipping x="-0.5" y="-0.41983695652173914"/>
+                        <edge id="24" source="14" target="15">
+                            <sourceClipping/>
+                            <targetClipping/>
                             <url/>
                             <visible value="true"/>
                             <graphics type="relationEdge">
@@ -480,10 +418,42 @@
                                 <bendWidth value="5.0"/>
                                 <bendHeight value="5.0"/>
                                 <antiAliasing value="false"/>
-                                <PEID value="DCE.10FC31CA-2CAA-4312-3F07-B5550CC92C68"/>
+                                <PEID value="DCE.41A1641C-5FB5-D51E-A5EE-232CAC93BAE5"/>
                             </graphics>
                         </edge>
-                        <edge id="29" source="16" target="15">
+                        <edge id="25" source="15" target="12">
+                            <sourceClipping/>
+                            <targetClipping/>
+                            <url/>
+                            <visible value="true"/>
+                            <graphics type="relationEdge">
+                                <lineColor value="0 0 0"/>
+                                <arrowWidth value="6.0"/>
+                                <arrowHeight value="6.0"/>
+                                <arrowType value="NO_ARROW"/>
+                                <bendWidth value="5.0"/>
+                                <bendHeight value="5.0"/>
+                                <antiAliasing value="false"/>
+                                <PEID value="DCE.42491756-B27A-A564-0D16-D6573D973975"/>
+                            </graphics>
+                        </edge>
+                        <edge id="26" source="17" target="15">
+                            <sourceClipping/>
+                            <targetClipping/>
+                            <url/>
+                            <visible value="true"/>
+                            <graphics type="relationEdge">
+                                <lineColor value="0 0 0"/>
+                                <arrowWidth value="6.0"/>
+                                <arrowHeight value="6.0"/>
+                                <arrowType value="NO_ARROW"/>
+                                <bendWidth value="5.0"/>
+                                <bendHeight value="5.0"/>
+                                <antiAliasing value="false"/>
+                                <PEID value="DCE.27DCFA47-7019-C16C-1BB2-79E883CBCCE1"/>
+                            </graphics>
+                        </edge>
+                        <edge id="27" source="17" target="16">
                             <sourceClipping/>
                             <targetClipping/>
                             <url/>
@@ -497,6 +467,54 @@
                                 <bendHeight value="5.0"/>
                                 <antiAliasing value="false"/>
                                 <PEID value="DCE.E7BA129F-BBA3-1652-3ADB-555639A04ECA"/>
+                            </graphics>
+                        </edge>
+                        <edge id="28" source="18" target="15">
+                            <sourceClipping/>
+                            <targetClipping/>
+                            <url/>
+                            <visible value="true"/>
+                            <graphics type="relationEdge">
+                                <lineColor value="0 0 0"/>
+                                <arrowWidth value="6.0"/>
+                                <arrowHeight value="6.0"/>
+                                <arrowType value="NO_ARROW"/>
+                                <bendWidth value="5.0"/>
+                                <bendHeight value="5.0"/>
+                                <antiAliasing value="false"/>
+                                <PEID value="DCE.3667E80E-5AC6-D8B8-1BC6-BB693DD5C44E"/>
+                            </graphics>
+                        </edge>
+                        <edge id="29" source="14" target="19">
+                            <sourceClipping/>
+                            <targetClipping/>
+                            <url/>
+                            <visible value="true"/>
+                            <graphics type="relationEdge">
+                                <lineColor value="0 0 0"/>
+                                <arrowWidth value="6.0"/>
+                                <arrowHeight value="6.0"/>
+                                <arrowType value="NO_ARROW"/>
+                                <bendWidth value="5.0"/>
+                                <bendHeight value="5.0"/>
+                                <antiAliasing value="false"/>
+                                <PEID value="DCE.B44E99ED-BD6C-C2DA-F48F-6C235EB4B663"/>
+                            </graphics>
+                        </edge>
+                        <edge id="30" source="20" target="15">
+                            <sourceClipping x="0.5" y="0.481852299495131"/>
+                            <targetClipping x="-0.5" y="-0.41983695652173914"/>
+                            <url/>
+                            <visible value="true"/>
+                            <graphics type="relationEdge">
+                                <lineColor value="0 0 0"/>
+                                <arrowWidth value="6.0"/>
+                                <arrowHeight value="6.0"/>
+                                <arrowType value="NO_ARROW"/>
+                                <bendWidth value="5.0"/>
+                                <bendHeight value="5.0"/>
+                                <antiAliasing value="false"/>
+                                <PEID value="DCE.10FC31CA-2CAA-4312-3F07-B5550CC92C68"/>
                             </graphics>
                         </edge>
                     </edges>
@@ -517,7 +535,7 @@
                     </graphics>
                 </graph>
             </graphs>
-            <rootGraph value="9"/>
+            <rootGraph value="10"/>
         </instances>
     </graphManager>
     <serviceInput type="jlayout">
