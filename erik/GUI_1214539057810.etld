@@ -18,8 +18,26 @@
             <graphs>
                 <graph id="3">
                     <name/>
+                    <margins>
+                        <proportional bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+                        <constant bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                    </margins>
+                    <url/>
+                    <graphics type="basicGraph">
+                        <backgroundColor value="255 255 255"/>
+                        <imageUsed/>
+                        <imageTiled value="false"/>
+                        <imageStyle value="WORLD_OFFSET"/>
+                        <imageMinTileStep value="25"/>
+                        <imageX value="0.0"/>
+                        <imageY value="0.0"/>
+                        <drawNodesBeforeEdges value="true"/>
+                    </graphics>
+                </graph>
+                <graph id="4">
+                    <name/>
                     <nodes>
-                        <node id="4">
+                        <node id="5">
                             <name/>
                             <center x="-116.5" y="99.5"/>
                             <size height="161.0" width="283.0"/>
@@ -40,11 +58,11 @@
                                 <PEID value="DCE.0FEF53FE-BEAC-D4EF-C3D3-52D613BF9629"/>
                             </graphics>
                         </node>
-                        <node id="5">
+                        <node id="6">
                             <name/>
-                            <center x="213.0" y="-27.5"/>
-                            <size height="359.0" width="260.0"/>
-                            <originalSize height="359.0" width="260.0"/>
+                            <center x="210.5" y="-9.5"/>
+                            <size height="323.0" width="255.0"/>
+                            <originalSize height="323.0" width="255.0"/>
                             <shape resource="0"/>
                             <url/>
                             <visible value="true"/>
@@ -61,7 +79,7 @@
                                 <PEID value="DCE.A7CF3C2E-7395-6FD1-C2E0-3D7D72A0D5FC"/>
                             </graphics>
                         </node>
-                        <node id="6">
+                        <node id="7">
                             <name/>
                             <center x="-98.5" y="-117.5"/>
                             <size height="161.0" width="221.0"/>
@@ -100,7 +118,7 @@
                     </graphics>
                 </graph>
             </graphs>
-            <rootGraph value="3"/>
+            <rootGraph value="4"/>
         </instances>
     </graphManager>
     <serviceInput type="jlayout">
