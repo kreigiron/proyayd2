@@ -11,23 +11,12 @@ public class Bestia extends Personaje {
     // #[regen=yes,id=DCE.D14F3E18-3414-B99F-EBD6-405FA8B63AAC]
     // </editor-fold> 
     public Bestia () {
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.BF369757-6A14-E3AE-D7AC-287D9C51924D]
-    // </editor-fold> 
-    public void atacar (Casilla c) {
-        
-    }
-    
-    public void mover(Casilla c){
-        
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.5462F6FB-0841-3A7C-CC25-43CF2F194F73]
-    // </editor-fold> 
-    public void defender () {
+        this.setEnergia(500);
+        this.setDefensa(1000);
+        this.setFuerza(1000);      
+        Arma a1 = new Mazo();
+        Arma a2 = new Mazo();
+        this.agregarArmas(a1,a2);
     }
 
 }

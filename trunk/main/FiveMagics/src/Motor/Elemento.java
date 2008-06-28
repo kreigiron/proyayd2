@@ -159,5 +159,22 @@ public abstract class Elemento extends Arma {
     public abstract void golpear ();{
     }
 
+    @Override
+    public boolean equals(Object o){
+        if(o!=null){
+            return o.hashCode() == this.hashCode();
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 67 * hash + (this.e != null ? this.e.hashCode() : 0);
+        hash = 67 * hash + (this.fuerte != null ? this.fuerte.hashCode() : 0);
+        hash = 67 * hash + (this.debil != null ? this.debil.hashCode() : 0);
+        hash = 67 * hash + (this.absorbe != null ? this.absorbe.hashCode() : 0);
+        return hash;
+    }
 }
 
