@@ -1,52 +1,68 @@
 package Motor;
 
+Method public java.util.ArrayList org.netbeans.modules.uml.integration.ide.events.ClassInfo.getImportedTypes() threw an exception when invoked on ClassInfo (Motor.Habilidad) Modify
+ Name       : Habilidad
+ Package    : Motor
+ Modifiers  : public abstract
+ Superclass : <none> -> Motor.Personaje
+ --- Methods ---
+(Modify) public Habilidad(): 
+(Modify) public getP(): Personaje
+(Modify) public setP(val: Motor.Personaje): void
+(Modify) public mover(casilla: int): void
+(Modify) public atacar(c: gui.Casilla): void
+(Modify) public defender(): void
 
-/**
- *  <html>
- *    <head>
- *  
- *    </head>
- *    <body>
- *      <p style="margin-top: 0">
- *        Agrega habilidades a los personajes
- *      </p>
- *    </body>
- *  </html>
- */
+ --- Fields ---
+protected Personaje p
+
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.CAE0DC72-2F3C-8233-7443-AAE075D86640]
 // </editor-fold> 
-public class Habilidad extends Personaje {
+public abstract class Habilidad extends Personaje {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.3293D75B-A4D8-7631-0E78-633F03094578]
+    // #[regen=yes,id=DCE.FF563FEC-1F70-7675-D698-C0008364C2CD]
     // </editor-fold> 
-    private Personaje p;
+    protected Personaje p;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.D10691B1-92A7-E266-F1D5-A72B6B44DC04]
+    // #[regen=yes,id=DCE.C36D31F6-62A7-6E41-7793-77926E6A8907]
     // </editor-fold> 
     public Habilidad () {
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.2C52B562-F8FE-1D22-1216-9A392918B081]
+    // #[regen=yes,regenBody=yes,id=DCE.0B09490D-99A4-055D-E95B-A49DAA1DB39D]
     // </editor-fold> 
     public Personaje getP () {
         return p;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.63BBFB5C-0FCA-23DF-FE78-DB9B6057E986]
+    // #[regen=yes,regenBody=yes,id=DCE.A30AED98-2A8B-416B-F8F7-C07EB29E3CE1]
     // </editor-fold> 
     public void setP (Personaje val) {
         this.p = val;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.15912DB0-897F-61AA-C148-7BE9FC4E3AB8]
+    // #[regen=yes,id=DCE.96B37C55-8041-8749-0562-E227455A9FDE]
     // </editor-fold> 
-    public abstract void atacar ();
+    public void mover (Method public java.lang.String org.netbeans.modules.uml.integration.ide.events.MethodParameterInfo.getCodeGenType() threw an exception when invoked on org.netbeans.modules.uml.integration.ide.events.MethodParameterInfo@6c69a1 casilla) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.BCC350FA-AA62-0835-076F-4F9969E8530E]
+    // </editor-fold> 
+    public void atacar (Casilla c) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.78667E26-CDFA-07B6-A345-D2F81122A9DC]
+    // </editor-fold> 
+    public void defender () {
+    }
 
 }
 

@@ -15,7 +15,7 @@ public class Tierra extends Elemento {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.0A256F81-9ADC-30A5-2CDF-D12BCD4BB82D]
     // </editor-fold> 
-    public void atacar () {
+    public void golpear () {
     }
 
 }

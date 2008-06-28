@@ -1,20 +1,21 @@
 package Motor;
 
+import java.util.ArrayList; 
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-// #[regen=yes,id=DCE.F2D7DB3D-1033-E6D3-2FB5-D3E3B45058B0]
+// #[regen=yes,id=DCE.37006410-E23A-3B1F-AE13-AEEA5E8917FD]
 // </editor-fold> 
 public class Equipo {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.F72F9EC1-A594-8CF1-7592-108031914319]
+    // #[regen=yes,id=DCE.5DA452CE-B1BA-2B57-C531-2499752BF2BD]
     // </editor-fold> 
-    private String nombre;
+    private Elemento e;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.C0E29447-D1BF-524E-AB1D-7D439219AE75]
+    // #[regen=yes,id=DCE.B365BBFF-EC57-993A-8BFA-57EC5C99255A]
     // </editor-fold> 
-    private int color;
+    private ArrayList<Personaje> personajes;
 
     /**
      *  <html>
@@ -23,62 +24,80 @@ public class Equipo {
      *    </head>
      *    <body>
      *      <p style="margin-top: 0">
-     *        Representa el equipo al que pertenecen los personajes
+     *        Equipo al que pertenece el personaje
      *      </p>
      *    </body>
      *  </html>
      */
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.52211434-9845-3E07-77A9-36FDAA58F576]
+    // #[regen=yes,id=DCE.170AC624-C0EC-40FA-E2A4-73F1B9FBABA5]
     // </editor-fold> 
-    private Elemento elemento;
+    private int color;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.B34CC4C6-6E98-AD78-1F20-9DC792DBC1D4]
+    // #[regen=yes,id=DCE.1F0543D9-48D4-60DA-FEBE-59B4619CCA63]
     // </editor-fold> 
     public Equipo () {
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.17F54B0B-6BE8-D873-BA3D-E474159D6368]
+    // #[regen=yes,regenBody=yes,id=DCE.71BD09BC-71FA-F3AB-A50C-D415AF84DB15]
     // </editor-fold> 
     public int getColor () {
         return color;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.6BABAB47-0F5F-2856-7DC1-C41F68D825D1]
+    // #[regen=yes,regenBody=yes,id=DCE.E4CB7A89-3F31-255E-33C4-E584FA6C2AA6]
     // </editor-fold> 
     public void setColor (int val) {
         this.color = val;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.1BFDB894-E20D-DB47-415C-59EDDC178D3C]
+    // #[regen=yes,regenBody=yes,id=DCE.1C07EF30-2678-C8A8-CDB0-9B39E235B814]
     // </editor-fold> 
-    public Elemento getElemento () {
-        return elemento;
+    public Elemento getE () {
+        return e;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.3E795CBF-A14A-F525-BC0C-585B5B1C88BE]
+    // #[regen=yes,regenBody=yes,id=DCE.EE820515-BA44-09B4-7DB6-D0E10AA082D0]
     // </editor-fold> 
-    public void setElemento (Elemento val) {
-        this.elemento = val;
+    public void setE (Elemento val) {
+        this.e = val;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.BB4B0155-F53E-1339-B17C-B9E1D4313B99]
+    // #[regen=yes,regenBody=yes,id=DCE.067954AB-BDDD-CFD9-4FA0-C55882EC7191]
     // </editor-fold> 
-    public String getNombre () {
-        return nombre;
+    public ArrayList<Personaje> getPersonajes () {
+        return personajes;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.F9D22EDD-7E64-72AF-32AC-1B4D46881214]
+    // #[regen=yes,regenBody=yes,id=DCE.3050E965-6C0E-55B1-AE7D-3AFA33D5F66B]
     // </editor-fold> 
-    public void setNombre (String val) {
-        this.nombre = val;
+    public void setPersonajes (ArrayList<Personaje> val) {
+        this.personajes = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.5BDC054D-654B-F2B6-0BDB-5454BD4F1A8E]
+    // </editor-fold> 
+    public void NotificarATodos () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.57D656FE-4DAB-2354-782D-4B2919CFD7BE]
+    // </editor-fold> 
+    public void Suscribir (Personaje p) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.8334E67F-99E9-6C64-A4E2-4BEF456FA3B1]
+    // </editor-fold> 
+    public void Desuscribir (Personaje p) {
     }
 
 }

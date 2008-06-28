@@ -15,7 +15,7 @@ public class Agua extends Elemento {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.A328697E-89A0-B375-DDCA-384ECB77CB65]
     // </editor-fold> 
-    public void atacar () {
+    public void golpear () {
     }
 
 }

@@ -90,7 +90,7 @@ public class Arma {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.B35B8BE1-F9F8-E536-F791-0549A72F1B20]
     // </editor-fold> 
-    public abstract void atacar ();{
+    public abstract void golpear ();{
     }
 
 }

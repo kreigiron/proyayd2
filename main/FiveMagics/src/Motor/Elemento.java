@@ -156,7 +156,7 @@ public abstract class Elemento extends Arma {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.74912CD9-2E68-A434-ED61-4B920F84190B]
     // </editor-fold> 
-    public abstract void atacar ();{
+    public abstract void golpear ();{
     }
 
 }
