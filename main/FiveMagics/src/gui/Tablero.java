@@ -10,7 +10,7 @@ public class Tablero {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.BC99EACF-7D0B-85FC-9804-EA81305A63F7]
     // </editor-fold> 
-    private static ArrayList<ArrayList<Casilla>> casillas;
+    private ArrayList<ArrayList<Casilla>> casillas;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.3BE4634C-33BB-3FEC-7A6D-409C7C387E8F]

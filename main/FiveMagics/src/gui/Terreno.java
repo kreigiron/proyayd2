@@ -33,14 +33,14 @@ public class Terreno {
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.10DE2970-6CC7-AC9A-D926-E68AA79A8474]
+    // #[regen=yes,regenBody=yes,id=DCE.7FF74B82-143E-7E55-8F31-22F57B7DA6A2]
     // </editor-fold> 
     public Elemento getE () {
         return e;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.3AAA4040-9795-112E-B430-2B491884B94B]
+    // #[regen=yes,regenBody=yes,id=DCE.F081B4CE-0056-6731-B13A-9E6FF781AF26]
     // </editor-fold> 
     public void setE (Elemento val) {
         this.e = val;

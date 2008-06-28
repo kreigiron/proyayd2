@@ -1,6 +1,8 @@
 package gui;
 
-import Motor.Movible; 
+import Motor.Movible;
+
+import FiveMagicsEngine.Terreno; 
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.23A9F0DA-D4BD-D49A-B0CC-2BCEB341765A]
@@ -22,7 +24,7 @@ public class Casilla {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.D5FE6A6B-A487-A7E2-1EAD-057ABB444FDB]
     // </editor-fold> 
-    private Terrento terreno;
+    private Terreno terreno;
 
     /**
      *  <html>
@@ -114,27 +116,15 @@ public class Casilla {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.33F830BA-2951-EBC0-F70B-64633FDFB4CC]
     // </editor-fold> 
-    public Terrento getTerreno () {
+    public Terreno getTerreno () {
         return terreno;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.FAA070CB-37A5-367A-51A1-526D336346D9]
     // </editor-fold> 
-    public void setTerreno (Terrento val) {
+    public void setTerreno (Terreno val) {
         this.terreno = val;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.D44584E3-D10F-403F-C59C-F5B5CC506280]
-    // </editor-fold> 
-    public void moverA (Casilla dest) {
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.3A1C2801-A374-2CC6-7A9F-8F195936B340]
-    // </editor-fold> 
-    public void atacarA (Casilla dest) {
     }
 
 }
