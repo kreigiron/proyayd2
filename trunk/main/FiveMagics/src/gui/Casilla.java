@@ -2,7 +2,6 @@ package gui;
 
 import Motor.Movible;
 
-import FiveMagicsEngine.Terreno; 
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.23A9F0DA-D4BD-D49A-B0CC-2BCEB341765A]
