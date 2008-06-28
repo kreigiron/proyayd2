@@ -1,38 +1,63 @@
 package Motor;
 
-import java.util.ArrayList;
+Method public java.util.ArrayList org.netbeans.modules.uml.integration.ide.events.ClassInfo.getImportedTypes() threw an exception when invoked on ClassInfo (Motor.Personaje) Modify
+ Name       : Personaje
+ Package    : Motor
+ Modifiers  : public abstract
 
-import gui.Casilla; 
+ --- Methods ---
+(Modify) public Personaje(): 
+(Modify) public getEnergia(): int
+(Modify) public setEnergia(val: int): void
+(Modify) public getFuerza(): int
+(Modify) public setFuerza(val: int): void
+(Modify) public getDefensa(): int
+(Modify) public setDefensa(val: int): void
+(Modify) public getArma(): ArrayList<Arma>
+(Modify) public setArma(val: java.util.ArrayList): void
+(Modify) public mover(casilla: int): void
+(Modify) public atacar(c: gui.Casilla): void
+(Modify) public defender(): void
+(Modify) public getE(): Equipo
+(Modify) public setE(val: Motor.Equipo): void
+(Modify) public notificar(): void
+
+ --- Fields ---
+private int energia
+private int fuerza
+private int defensa
+private Arma[] arma
+private Equipo e
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.79C8BF81-5515-6479-5EAD-E7576071C546]
 // </editor-fold> 
-public class Personaje implements Movible {
+public abstract class Personaje implements Movible {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.88D45964-EB9B-73C1-D1A3-1B94830D9BFB]
+    // #[regen=yes,id=DCE.C179991B-4CAA-3748-40D3-8FBDB39C3860]
     // </editor-fold> 
-    private int Energia;
+    private int energia;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.E9E494DA-0C2A-FFEC-9264-971315A6A4D0]
+    // #[regen=yes,id=DCE.D321ECDF-96A9-945D-C6DB-1E989C736CC3]
     // </editor-fold> 
-    private int Fuerza;
+    private int fuerza;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.23037C13-25A3-144A-A7A8-DDB5A6B2AD95]
+    // #[regen=yes,id=DCE.584A82B3-E46F-61A2-C158-50F8F4B6EC46]
     // </editor-fold> 
-    private int Defensa;
+    private int defensa;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.9C4BE983-7CDC-1E8C-75F4-181D4986AE99]
+    // #[regen=yes,id=DCE.C784E8B4-A791-6DEE-5BC8-7C787795874F]
     // </editor-fold> 
     private ArrayList<Arma> arma;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.A1247D16-9324-B59E-E423-269313E8366F]
+    // #[regen=yes,id=DCE.2659D86C-787B-5D15-8865-709372BC9717]
     // </editor-fold> 
-    private Equipo equipo;
+    private Equipo e;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.13FE09B3-0DE8-A098-2016-425293BFD434]
@@ -41,101 +66,97 @@ public class Personaje implements Movible {
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.8182DB74-9F2E-EB24-35E2-B5B8B0E8D1CC]
-    // </editor-fold> 
-    public int getDefensa () {
-        return Defensa;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.D635A5EE-7FC9-BC6B-EB01-5C59FE356300]
-    // </editor-fold> 
-    public void setDefensa (int val) {
-        this.Defensa = val;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.149176DA-89E4-1500-C4B0-7776CBB61D3D]
-    // </editor-fold> 
-    public int getEnergia () {
-        return Energia;
-    }
-
-    /**
-     *  <html>
-     *    <head>
-     *  
-     *    </head>
-     *    <body>
-     *      <p style="margin-top: 0">
-     *        Representa a un personaje
-     *      </p>
-     *    </body>
-     *  </html>
-     */
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.7C5A842C-0A7A-4AD7-5FE9-36AB9568E2F8]
-    // </editor-fold> 
-    public void setEnergia (int val) {
-        this.Energia = val;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.2B39BC8B-9CCA-37BF-A8FB-BC2A42ECC902]
-    // </editor-fold> 
-    public int getFuerza () {
-        return Fuerza;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.610D271A-F97B-F3A2-BEE9-AADB8FDC30C8]
-    // </editor-fold> 
-    public void setFuerza (int val) {
-        this.Fuerza = val;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.FF562865-48B7-BC05-0845-A07DDBBDCA81]
+    // #[regen=yes,regenBody=yes,id=DCE.818807E2-84EA-534E-A223-888012AEC094]
     // </editor-fold> 
     public ArrayList<Arma> getArma () {
         return arma;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.A7DFAC5E-A446-796F-6172-C5FB510ED950]
+    // #[regen=yes,regenBody=yes,id=DCE.C8F1C937-868E-5936-FA3C-6801892370A1]
     // </editor-fold> 
     public void setArma (ArrayList<Arma> val) {
         this.arma = val;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.B4C729F6-7932-8269-E5A2-F8DF7A1D86A1]
+    // #[regen=yes,regenBody=yes,id=DCE.0AB46AB1-0B44-E1A2-C893-DEB6D4C48ED9]
     // </editor-fold> 
-    public abstract void atacar ();
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.C306B2D3-6459-21CC-E6D2-3DA54B740C3A]
-    // </editor-fold> 
-    public Equipo getEquipo () {
-        return equipo;
+    public int getDefensa () {
+        return defensa;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.334F9E2C-CB08-F450-6CAA-EBF122C36B08]
+    // #[regen=yes,regenBody=yes,id=DCE.6016B755-3848-4CA2-9C67-667E4D840813]
     // </editor-fold> 
-    public void setEquipo (Equipo val) {
-        this.equipo = val;
+    public void setDefensa (int val) {
+        this.defensa = val;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.2487F49B-E716-B1B5-843E-4427EFFF2EE3]
+    // #[regen=yes,regenBody=yes,id=DCE.B3B837C9-88AD-32CF-13C1-F479EEDCD9B0]
     // </editor-fold> 
-    public void defender () 
+    public int getEnergia () {
+        return energia;
+    }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.5EFB5DB8-C33B-8740-5521-8997A124A987]
+    // #[regen=yes,regenBody=yes,id=DCE.C91ADB39-C42A-DC60-2695-DD064D47B897]
     // </editor-fold> 
-    public void mover (Casilla destino) {
+    public void setEnergia (int val) {
+        this.energia = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.5728531A-ABAD-6E48-7DF0-0A99557A6A8B]
+    // </editor-fold> 
+    public int getFuerza () {
+        return fuerza;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.06C8CEEA-07CC-5D36-B4F1-D2D18099B1A0]
+    // </editor-fold> 
+    public void setFuerza (int val) {
+        this.fuerza = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.8D097986-0804-6326-7E21-57A68C42C92E]
+    // </editor-fold> 
+    public void mover (Method public java.lang.String org.netbeans.modules.uml.integration.ide.events.MethodParameterInfo.getCodeGenType() threw an exception when invoked on org.netbeans.modules.uml.integration.ide.events.MethodParameterInfo@36a2b2 casilla) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.B1896D69-8180-52C9-6E71-32299760630D]
+    // </editor-fold> 
+    public void atacar (Casilla c) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.97790C0A-F702-17CE-1FF2-D2132931CBAE]
+    // </editor-fold> 
+    public void defender () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.C86E7A61-4958-6481-415F-826ED4AC3E19]
+    // </editor-fold> 
+    public Equipo getE () {
+        return e;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.289CCB6F-1CBA-EBE6-8231-01CE45062EE5]
+    // </editor-fold> 
+    public void setE (Equipo val) {
+        this.e = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.FD819CC1-4606-8E29-3BA1-009371D21511]
+    // </editor-fold> 
+    public void notificar () {
     }
 
 }

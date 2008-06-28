@@ -15,7 +15,7 @@ public abstract class Fuego extends Elemento {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.DA25A371-E8EA-138F-C3BA-FD5178625954]
     // </editor-fold> 
-    public void atacar () {
+    public void golpear () {
     }
 
 }
