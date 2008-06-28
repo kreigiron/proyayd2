@@ -17,17 +17,17 @@ public class Mago extends Habilidad {
     // #[regen=yes,id=DCE.0D68540E-F8CD-B8F4-ABAB-F12FFCDFBF3F]
     // </editor-fold> 
     public void atacar (Casilla c) {
+        p.atacar(c);
+        c.getM().defender(this, this.getArma().get(new Integer(1)));
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.E0A279B9-D6BF-9797-7DF0-131CC92C6806]
     // </editor-fold> 
-    public void defender () {
-    }
-    
-    public void mover(Casilla c){
+    public void defender (Personaje p, Arma m){ 
         
-    }
+    }    
 
 }
 

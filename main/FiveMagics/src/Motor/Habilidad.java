@@ -18,6 +18,10 @@ public abstract class Habilidad extends Personaje {
     public Habilidad () {
     }
 
+    public Habilidad (Personaje pp) {
+        this.p = pp;
+    }
+        
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.0B09490D-99A4-055D-E95B-A49DAA1DB39D]
     // </editor-fold> 
@@ -35,14 +39,12 @@ public abstract class Habilidad extends Personaje {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.BCC350FA-AA62-0835-076F-4F9969E8530E]
     // </editor-fold> 
-    public void atacar (Casilla c) {
-    }
+    public abstract void atacar (Casilla c) ;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.78667E26-CDFA-07B6-A345-D2F81122A9DC]
     // </editor-fold> 
-    public void defender () {
-    }
+    public abstract void defender (Personaje p, Arma m) ;
 
 }
 

@@ -36,6 +36,8 @@ public abstract class Arma {
     // </editor-fold> 
     private int alcance;
 
+    private int factorAtaque;
+    
     /**
      *  <html>
      *    <head>
@@ -91,6 +93,33 @@ public abstract class Arma {
     // #[regen=yes,id=DCE.B35B8BE1-F9F8-E536-F791-0549A72F1B20]
     // </editor-fold> 
     public abstract void golpear ();
+    
+    @Override
+    public boolean equals(Object o){
+        if(o!=null){
+            return o.hashCode() == this.hashCode();
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 53 * hash + this.alcance;
+        hash = 53 * hash + this.factorAtaque;
+        hash = 53 * hash + this.direccion;
+        return hash;
+    }
+
+
+
+    public int getFactorAtaque() {
+        return factorAtaque;
+    }
+
+    public void setFactorAtaque(int factorAtaque) {
+        this.factorAtaque = factorAtaque;
+    }
 
 }
 

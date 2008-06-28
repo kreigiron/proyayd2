@@ -1,13 +1,17 @@
 package Motor;
 
 import gui.Casilla; 
-import java.util.ArrayList; 
+import java.util.*; 
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.79C8BF81-5515-6479-5EAD-E7576071C546]
 // </editor-fold> 
 public abstract class Personaje implements Movible {
 
+    static int personajes = 0;
+    private int id_personaje;
+    
+    private Casilla casilla;
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.C179991B-4CAA-3748-40D3-8FBDB39C3860]
     // </editor-fold> 
@@ -26,7 +30,7 @@ public abstract class Personaje implements Movible {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.C784E8B4-A791-6DEE-5BC8-7C787795874F]
     // </editor-fold> 
-    private ArrayList<Arma> arma;
+    private HashMap<Integer,Arma> armas = new HashMap <Integer,Arma>();
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.2659D86C-787B-5D15-8865-709372BC9717]
@@ -37,20 +41,27 @@ public abstract class Personaje implements Movible {
     // #[regen=yes,id=DCE.13FE09B3-0DE8-A098-2016-425293BFD434]
     // </editor-fold> 
     public Personaje () {
+        this.id_personaje = personajes;
+    }
+    
+    public Personaje (Casilla c) {
+        this.casilla = c;
+        this.id_personaje = personajes;
+        Personaje.personajes ++;        
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.818807E2-84EA-534E-A223-888012AEC094]
     // </editor-fold> 
-    public ArrayList<Arma> getArma () {
-        return arma;
+    public HashMap<Integer,Arma> getArma () {
+        return armas;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.C8F1C937-868E-5936-FA3C-6801892370A1]
     // </editor-fold> 
-    public void setArma (ArrayList<Arma> val) {
-        this.arma = val;
+    public void setArma (HashMap<Integer,Arma> val) {
+        this.armas = val;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -98,13 +109,35 @@ public abstract class Personaje implements Movible {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.B1896D69-8180-52C9-6E71-32299760630D]
     // </editor-fold> 
-    public void atacar (Casilla c) {
-    }
+    public void atacar (Casilla c){
+        if(Math.abs(c.getPosX() - this.getCasilla().getPosX()) <= this.getArma().get(new Integer(1)).getAlcance()
+                &&
+                Math.abs(c.getPosY() - this.getCasilla().getPosY()) <= this.getArma().get(new Integer(1)).getAlcance()){
+            c.getM().defender(this, this.getArma().get(new Integer(1)));                        
+        } 
+        if(Math.abs(c.getPosX() - this.getCasilla().getPosX()) <= this.getArma().get(new Integer(2)).getAlcance()
+                &&
+                Math.abs(c.getPosY() - this.getCasilla().getPosY()) <= this.getArma().get(new Integer(2)).getAlcance()){
+            c.getM().defender(this, this.getArma().get(new Integer(2)));                        
+        } 
+    };
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.97790C0A-F702-17CE-1FF2-D2132931CBAE]
     // </editor-fold> 
-    public void defender () {
+    public void defender (Personaje p, Arma m){
+      if (p.getE().getE().getAbsorbe() ==  this.getE().getE() ){            
+            this.setEnergia(this.getEnergia() + (p.getFuerza()*(m.getFactorAtaque()/100) /2));
+        }
+        else if(p.getE().getE().getDebil() ==  this.getE().getE()){
+            this.setEnergia(this.getEnergia() - p.getFuerza()*(m.getFactorAtaque()/100) /4);
+        }
+        else if(p.getE().getE().getFuerte() ==  this.getE().getE()){
+            this.setEnergia(this.getEnergia() - p.getFuerza()*(m.getFactorAtaque()/100) * 2);
+        }
+        else 
+            this.setEnergia(this.getEnergia() - p.getFuerza()*(m.getFactorAtaque()/100));
+            
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -125,6 +158,45 @@ public abstract class Personaje implements Movible {
     // #[regen=yes,id=DCE.FD819CC1-4606-8E29-3BA1-009371D21511]
     // </editor-fold> 
     public void notificar () {
+    }
+
+    public Casilla getCasilla() {
+        return casilla;
+    }
+
+    public void setCasilla(Casilla casilla) {
+        this.casilla = casilla;
+    }
+    
+    @Override
+    public boolean equals(Object o){
+        if (o != null){
+            return (o.hashCode() == this.hashCode());
+        }
+        return false;
+        
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 59 * hash + this.energia;
+        hash = 59 * hash + this.fuerza;
+        hash = 59 * hash + this.defensa;
+        hash = 59 * hash + (this.armas != null ? this.armas.hashCode() : 0);
+        hash = 59 * hash + (this.e != null ? this.e.hashCode() : 0);
+        return hash;
+    }
+    
+    public void mover(Casilla c){
+        this.getE().Desuscribir(this, c);
+        this.setCasilla(c);
+        this.getE().Suscribir(this, c);
+    }
+
+    public void agregarArmas(Arma a1, Arma a2){
+        this.armas.put(new Integer(1),a1);
+        this.armas.put(new Integer(2),a2);                
     }
 
 }

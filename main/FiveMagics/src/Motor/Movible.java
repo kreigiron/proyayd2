@@ -20,7 +20,7 @@ public interface Movible {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.2A342FB7-C041-F2C0-7BEE-F1395810904A]
     // </editor-fold> 
-    public void defender ();
+    public void defender (Personaje p, Arma m);
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.B75E10A7-481B-FBB5-5B08-9C798DCC2516]
