@@ -10,13 +10,11 @@ public class Tierra extends Elemento {
     // #[regen=yes,id=DCE.ACF873E3-A3E2-FB9B-578F-254DFECAC4B1]
     // </editor-fold> 
     public Tierra () {
+        this.setFuerte(new Fuego());
+        this.setDebil(new Agua());      
+        this.setAbsorbe(new Tierra());
     }
 
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.0A256F81-9ADC-30A5-2CDF-D12BCD4BB82D]
-    // </editor-fold> 
-    public void golpear () {
-    }
-
+ 
 }
 

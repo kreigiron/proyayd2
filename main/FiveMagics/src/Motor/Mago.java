@@ -21,6 +21,7 @@ public class Mago extends Habilidad {
         c.getM().defender(this, this.getArma().get(new Integer(1)));
         
     }
+      
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.E0A279B9-D6BF-9797-7DF0-131CC92C6806]

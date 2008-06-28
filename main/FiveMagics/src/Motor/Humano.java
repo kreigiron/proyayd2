@@ -18,7 +18,7 @@ public class Humano extends Personaje {
         Arma a1 = new Espada();
         Arma a2 = new Espada();
         this.agregarArmas(a1,a2);
-    }
+    } 
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.30978ED2-4E89-ED94-B3C2-37D80E5604DD]

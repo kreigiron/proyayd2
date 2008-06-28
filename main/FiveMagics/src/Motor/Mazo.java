@@ -15,7 +15,8 @@ public class Mazo extends Arma {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.0FA3E082-55C3-B12E-373E-850AAD5E62A9]
     // </editor-fold> 
-    public void golpear () {
+    public int golpear (Personaje p) {
+        return  this.getFactorAtaque()*p.getDefensa()/10; 
     }
 
 }

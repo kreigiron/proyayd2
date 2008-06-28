@@ -15,8 +15,9 @@ public class Espada extends Arma {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.3ECC8B8E-E3C5-6EA1-AA33-829C8B21ED0F]
     // </editor-fold> 
-    public void golpear () {
+    public int golpear (Personaje p) {
+        return  this.getFactorAtaque()*p.getDefensa()/100;
     }
 
 }
-
+ 

@@ -156,8 +156,15 @@ public abstract class Elemento extends Arma {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.74912CD9-2E68-A434-ED61-4B920F84190B]
     // </editor-fold> 
-    public abstract void golpear ();{
-    }
+    public int golpear (Personaje p){
+        if (p.getE().getE().equals(this))
+            return 0;
+        else if (p.getE().getE().getDebil().equals(this)){
+            return this.getFactorAtaque()/10;
+        }
+        else
+            return this.getFactorAtaque(); 
+    };
 
     @Override
     public boolean equals(Object o){

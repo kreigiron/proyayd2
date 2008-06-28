@@ -19,5 +19,6 @@ public class Bestia extends Personaje {
         this.agregarArmas(a1,a2);
     }
 
+     
 }
 

@@ -106,7 +106,7 @@ public class Equipo {
     public void Desuscribir (Personaje p, Casilla c){ 
        if(p!= null){
             p.setCasilla(c);
-            this.personajes.remove(p);
+            this.personajes.remove(p); 
         }
     }
 
