@@ -2,6 +2,7 @@ package Motor;
 
 import java.util.ArrayList; 
 
+import gui.*;
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.37006410-E23A-3B1F-AE13-AEEA5E8917FD]
 // </editor-fold> 
@@ -91,13 +92,22 @@ public class Equipo {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.57D656FE-4DAB-2354-782D-4B2919CFD7BE]
     // </editor-fold> 
-    public void Suscribir (Personaje p) {
+    public void Suscribir (Personaje p, Casilla c) {
+        if(p!= null){
+            p.setCasilla(c);
+            this.personajes.add(p);
+        }
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.8334E67F-99E9-6C64-A4E2-4BEF456FA3B1]
     // </editor-fold> 
-    public void Desuscribir (Personaje p) {
+    public void Desuscribir (Personaje p, Casilla c){ 
+       if(p!= null){
+            p.setCasilla(c);
+            this.personajes.remove(p);
+        }
     }
 
 }
