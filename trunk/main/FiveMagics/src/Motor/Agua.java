@@ -10,13 +10,15 @@ public class Agua extends Elemento {
     // #[regen=yes,id=DCE.92E7346C-BF24-B3DB-4B69-4B0574A97DDF]
     // </editor-fold> 
     public Agua () {
+        this.setFuerte(new Tierra());
+        this.setDebil(new Fuego());      
+        this.setAbsorbe(new Agua());
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.A328697E-89A0-B375-DDCA-384ECB77CB65]
     // </editor-fold> 
-    public void golpear () {
-    }
+ 
 
 }
 

@@ -22,7 +22,7 @@ public abstract class Boxeador extends Habilidad {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.B6469068-2FF9-C4E6-28FB-7B5D6C681EF7]
     // </editor-fold> 
-    public Boxeador () {
+    public Boxeador () {  
     }
 
 }

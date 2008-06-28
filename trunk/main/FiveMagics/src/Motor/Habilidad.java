@@ -46,5 +46,6 @@ public abstract class Habilidad extends Personaje {
     // </editor-fold> 
     public abstract void defender (Personaje p, Arma m) ;
 
+     
 }
 

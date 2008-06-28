@@ -76,7 +76,7 @@ public abstract class Personaje implements Movible {
     // </editor-fold> 
     public void setDefensa (int val) {
         this.defensa = val;
-    }
+    } 
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.B3B837C9-88AD-32CF-13C1-F479EEDCD9B0]
@@ -127,16 +127,16 @@ public abstract class Personaje implements Movible {
     // </editor-fold> 
     public void defender (Personaje p, Arma m){
       if (p.getE().getE().getAbsorbe() ==  this.getE().getE() ){            
-            this.setEnergia(this.getEnergia() + (p.getFuerza()*(m.getFactorAtaque()/100) /2));
+            this.setEnergia(this.getEnergia() + (p.getFuerza()*(m.golpear(this)/100) /2));
         }
         else if(p.getE().getE().getDebil() ==  this.getE().getE()){
-            this.setEnergia(this.getEnergia() - p.getFuerza()*(m.getFactorAtaque()/100) /4);
+            this.setEnergia(this.getEnergia() - p.getFuerza()*(m.golpear(this)/100) /4);
         }
         else if(p.getE().getE().getFuerte() ==  this.getE().getE()){
-            this.setEnergia(this.getEnergia() - p.getFuerza()*(m.getFactorAtaque()/100) * 2);
+            this.setEnergia(this.getEnergia() - p.getFuerza()*(m.golpear(this)/100) * 2);
         }
         else 
-            this.setEnergia(this.getEnergia() - p.getFuerza()*(m.getFactorAtaque()/100));
+            this.setEnergia(this.getEnergia() - p.getFuerza()*(m.golpear(this)/100));
             
     }
 

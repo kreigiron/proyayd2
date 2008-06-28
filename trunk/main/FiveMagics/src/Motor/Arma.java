@@ -92,7 +92,7 @@ public abstract class Arma {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.B35B8BE1-F9F8-E536-F791-0549A72F1B20]
     // </editor-fold> 
-    public abstract void golpear ();
+    public abstract int  golpear (Personaje p);
     
     @Override
     public boolean equals(Object o){
@@ -102,7 +102,7 @@ public abstract class Arma {
         return false;
     }
 
-    @Override
+    @Override 
     public int hashCode() {
         int hash = 7;
         hash = 53 * hash + this.alcance;
