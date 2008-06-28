@@ -1,6 +1,5 @@
 package gui;
 
-import FiveMagicsEngine.Elemento;
 
 import Motor.Elemento; 
 
