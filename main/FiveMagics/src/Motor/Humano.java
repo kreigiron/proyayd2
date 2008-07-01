@@ -3,6 +3,7 @@ package Motor;
 import gui.Casilla; 
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+import javax.swing.JButton;
 // #[regen=yes,id=DCE.664CB10D-2AA5-AB22-411F-D83B5B0AFA1C]
 // </editor-fold> 
 public class Humano extends Personaje {
@@ -46,7 +47,7 @@ public class Humano extends Personaje {
     }
 
     public void dibujar() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        this.grafica = new Circulo(2);
     }
 
     @Override
@@ -55,6 +56,7 @@ public class Humano extends Personaje {
         str+= "Raza: " + "Humano" + "\n";        
         return str;
     }
+
 
 }
 

@@ -13,6 +13,7 @@ package Motor;
  *      </p>
  *    </body>
  *  </html>
+ * @deprecated
  */
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.2CC01627-6461-26E1-143D-CBED2258717F]

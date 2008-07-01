@@ -1,5 +1,7 @@
 package Motor;
 
+import javax.swing.JButton;
+
 
 /**
  *  <html>
@@ -66,6 +68,18 @@ public class Arma implements Movible{
 
     public void setFactorAtaque(int factorAtaque) {
         this.factorAtaque = factorAtaque;
+    }
+
+    public JButton getButton() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public Arma getArma() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void setArma(Arma arma) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
 }
