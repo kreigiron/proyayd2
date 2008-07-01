@@ -29,9 +29,17 @@ public class Agua extends Elemento {
         return Elemento.TIERRA;        
     }
     
-    
-    
- 
+    @Override
+    public String toString(){
+        String str;
+        if(this.getArma() != null){
+            str = this.getArma().toString();
+        }
+        else
+            str= super.toString();
+        str+= " Elemento: Agua ";        
+        return str;
+    }
 
 }
 

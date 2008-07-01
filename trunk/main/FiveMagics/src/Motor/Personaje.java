@@ -134,6 +134,7 @@ public abstract class Personaje extends javax.swing.JButton implements Movible {
     public JButton getButton() {
         return this;
     }
+       
 
 }
 

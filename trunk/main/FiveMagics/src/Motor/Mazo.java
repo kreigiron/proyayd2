@@ -16,7 +16,7 @@ public class Mazo extends Arma {
     @Override
     public String toString(){
         String str = new String();
-        str+= "Tipo: Mazo ";        
+        str+= " Tipo: Mazo ";        
         return str;
     }
 }

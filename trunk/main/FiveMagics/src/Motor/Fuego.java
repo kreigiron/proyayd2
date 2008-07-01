@@ -42,5 +42,16 @@ public class Fuego extends Elemento {
         return Elemento.AGUA;
     }
     
+    @Override
+    public String toString(){
+        String str;
+        if(this.getArma() != null){
+            str = this.getArma().toString();
+        }
+        else
+            str= super.toString();
+        str+= " Elemento: Fuego ";        
+        return str;
+    }
 }
 

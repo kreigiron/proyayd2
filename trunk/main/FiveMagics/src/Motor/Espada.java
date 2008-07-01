@@ -11,8 +11,8 @@ public class Espada extends Arma {
     }
     @Override
     public String toString(){
-        String str = new String();
-        str+= "Tipo: Espada ";        
+        String str = super.toString();
+        str+= " Tipo: Espada ";        
         return str;
     }
 
