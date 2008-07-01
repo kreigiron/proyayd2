@@ -1,5 +1,6 @@
 package Motor;
 
+import gui.Casilla;
 import javax.swing.JButton;
 
 
@@ -24,6 +25,10 @@ public class Arma implements Movible{
     private int alcance;
 
     private int factorAtaque;
+    
+    public static final int MAZO = 1;
+    public static final int ESPADA = 2;
+            
     
         /**Ataca al movible especificado*/
     @Override
@@ -88,6 +93,15 @@ public class Arma implements Movible{
         str+= "(Alcance: " + this.alcance+ ",";        
         str+= "Factor: " + this.factorAtaque+ ")";     
         return str;
+    }
+    
+    @Override
+    public void setCasilla(Casilla c) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    @Override
+    public Casilla getCasilla() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
 

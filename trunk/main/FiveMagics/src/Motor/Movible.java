@@ -42,6 +42,10 @@ public interface Movible {
     /**Asigna arma de este movible*/
     public void setArma(Arma arma);
     
+    /**Asigna nueva casilla al movible*/
+    public void setCasilla(Casilla c);
     
+    /**Devuelve la casilla actual*/
+    public Casilla getCasilla();
 }
 
