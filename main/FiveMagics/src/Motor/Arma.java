@@ -82,5 +82,12 @@ public class Arma implements Movible{
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    @Override
+    public String toString(){
+        String str = super.toString();
+        str+= "(Alcance: " + this.alcance+ ",";        
+        str+= "Factor: " + this.factorAtaque+ ")";     
+        return str;
+    }
 }
 
