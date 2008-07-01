@@ -11,7 +11,7 @@ public abstract class Elemento extends Arma {
     public static final int FUEGO = 1;
     public static final int AGUA = 2;
      public static final int TIERRA = 3;
-    public static final int VIENTO = 3;
+    public static final int VIENTO = 4;
         
     
     private Arma arma;

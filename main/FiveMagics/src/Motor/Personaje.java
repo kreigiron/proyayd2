@@ -51,7 +51,7 @@ public abstract class Personaje extends javax.swing.JButton implements Movible {
 
     public abstract int getIdPersonaje();
         
-
+    @Override
     public Casilla getCasilla() {
         return casilla;
     }
@@ -133,6 +133,11 @@ public abstract class Personaje extends javax.swing.JButton implements Movible {
     @Override
     public JButton getButton() {
         return this;
+    }
+
+    @Override
+    public void setCasilla(Casilla casilla) {
+        this.casilla = casilla;
     }
        
 
