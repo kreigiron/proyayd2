@@ -17,101 +17,48 @@ package Motor;
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.E33659C5-9DC9-4BC1-E0A5-340A38133848]
 // </editor-fold> 
-public abstract class Arma {
+public class Arma implements Movible{
 
-    /**
-     *  <html>
-     *    <head>
-     *  
-     *    </head>
-     *    <body>
-     *      <p style="margin-top: 0">
-     *        especifica el alcance del ataque
-     *      </p>
-     *    </body>
-     *  </html>
-     */
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.386A5D68-1BB2-9215-8257-140230141329]
-    // </editor-fold> 
     private int alcance;
 
     private int factorAtaque;
     
-    /**
-     *  <html>
-     *    <head>
-     *  
-     *    </head>
-     *    <body>
-     *      <p style="margin-top: 0">
-     *        Especifica la direccion
-     *      </p>
-     *    </body>
-     *  </html>
-     */
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.1E29160C-B657-87FC-FC32-0CF0D3B9FE66]
-    // </editor-fold> 
-    private int direccion;
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.E54E97D1-CA11-EE39-30A1-11DE4A5DBA20]
-    // </editor-fold> 
-    public Arma () {
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.41DE2292-9C76-8127-AD0C-2C477D8B7ED0]
-    // </editor-fold> 
-    public int getAlcance () {
-        return alcance;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.D6862903-5AE1-B5FA-A232-04E5B2E87EA9]
-    // </editor-fold> 
-    public void setAlcance (int val) {
-        this.alcance = val;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.172D9666-25C0-FD99-152B-3374A91F7CD9]
-    // </editor-fold> 
-    public int getDireccion () {
-        return direccion;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.BDC8A59A-DEA9-4A61-74EF-41780CF5196D]
-    // </editor-fold> 
-    public void setDireccion (int val) {
-        this.direccion = val;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.B35B8BE1-F9F8-E536-F791-0549A72F1B20]
-    // </editor-fold> 
-    public abstract int  golpear (Personaje p);
-    
+        /**Ataca al movible especificado*/
     @Override
-    public boolean equals(Object o){
-        if(o!=null){
-            return o.hashCode() == this.hashCode();
-        }
-        return false;
+    public void atacar (Movible enemigo){        
+        enemigo.dañar(enemigo.getDefensa()/getFactorAtaque());        
     }
 
-    @Override 
-    public int hashCode() {
-        int hash = 7;
-        hash = 53 * hash + this.alcance;
-        hash = 53 * hash + this.factorAtaque;
-        hash = 53 * hash + this.direccion;
-        return hash;
+    /**Recibe puntos de daño*/
+    public void dañar (int puntos){        
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**Actualiza su estado dentro del topico en el que esté*/
+    public void update(){    
+    }
+    
+    /**Obtiene el equipo al que pertenece el movible actual*/
+    public Equipo getEquipo(){
+        return null;
+    }
+    
+    /**Asigna equipo al movible*/
+    public void setEquipo(Equipo e){        
+    }
+    
+    /**Obtiene el estado del movible actual*/
+    public int getEstado(){
+        return -1;
+    }
+    
+    /**Devuelve representacion grafica si se tiene*/
+    public void dibujar(){        
+    }
 
+    public int getDefensa() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 
     public int getFactorAtaque() {
         return factorAtaque;

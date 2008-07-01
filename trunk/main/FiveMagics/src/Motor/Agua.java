@@ -6,18 +6,31 @@ package Motor;
 // </editor-fold> 
 public class Agua extends Elemento {
 
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.92E7346C-BF24-B3DB-4B69-4B0574A97DDF]
-    // </editor-fold> 
     public Agua () {
-        this.setFuerte(new Tierra());
-        this.setDebil(new Fuego());      
-        this.setAbsorbe(new Agua());
+        
+    }
+    
+    public Agua(Arma m){
+        super(m);
     }
 
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.A328697E-89A0-B375-DDCA-384ECB77CB65]
-    // </editor-fold> 
+    @Override
+    public int fuerteAnte() {
+        return Elemento.FUEGO;
+    }
+
+    @Override
+    public int getElemId() {
+        return Elemento.AGUA;
+    }
+
+    @Override
+    public int debilAnte() {
+        return Elemento.TIERRA;        
+    }
+    
+    
+    
  
 
 }

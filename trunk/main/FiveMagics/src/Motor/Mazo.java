@@ -10,14 +10,14 @@ public class Mazo extends Arma {
     // #[regen=yes,id=DCE.C7578833-3B08-91DA-B7EE-469227F32622]
     // </editor-fold> 
     public Mazo () {
-    }
+        this.setFactorAtaque(2);
+    }    
 
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.0FA3E082-55C3-B12E-373E-850AAD5E62A9]
-    // </editor-fold> 
-    public int golpear (Personaje p) {
-        return  this.getFactorAtaque()*p.getDefensa()/10; 
+    @Override
+    public String toString(){
+        String str = new String();
+        str+= "Tipo: Mazo ";        
+        return str;
     }
-
 }
 
