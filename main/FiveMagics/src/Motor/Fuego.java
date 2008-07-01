@@ -8,17 +8,39 @@ public class Fuego extends Elemento {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.E5AD77C3-3C8F-DC41-892F-A619C3C96B05]
-    // </editor-fold> 
-    public Fuego () {
-        this.setFuerte(new Agua());
-        this.setDebil(new Tierra());      
-        this.setAbsorbe(new Fuego());
+    // </editor-fold>
+    
+    private static final int elemId=2;
+    
+    
+    public Fuego () {        
+    }
+    
+    public Fuego(Arma m){
+        super(m);
+    }
+    
+    @Override
+    public void atacar(Movible m){
+            
     }
 
-     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.DA25A371-E8EA-138F-C3BA-FD5178625954]
-    // </editor-fold> 
-    
+    @Override
+    public int fuerteAnte() {
+      return Elemento.VIENTO;
+    }
 
+    
+    
+    @Override
+    public int getElemId() {
+        return Elemento.FUEGO;
+    }
+
+    @Override
+    public int debilAnte() {
+        return Elemento.AGUA;
+    }
+    
 }
 

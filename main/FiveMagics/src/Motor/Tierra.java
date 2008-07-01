@@ -9,12 +9,33 @@ public class Tierra extends Elemento {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.ACF873E3-A3E2-FB9B-578F-254DFECAC4B1]
     // </editor-fold> 
-    public Tierra () {
-        this.setFuerte(new Fuego());
-        this.setDebil(new Agua());      
-        this.setAbsorbe(new Tierra());
+    
+   
+    private static final int elemId=3;
+    
+   
+    public Tierra(){
+    }
+    
+    public Tierra(Arma m){
+          super(m);
     }
 
- 
+    @Override
+    public int fuerteAnte() {
+        return Elemento.AGUA;
+    }
+
+    @Override
+    public int debilAnte() {
+        return Elemento.VIENTO;
+    }
+
+    @Override
+    public int getElemId() {
+        return Elemento.TIERRA;
+    }
+    
+
 }
 

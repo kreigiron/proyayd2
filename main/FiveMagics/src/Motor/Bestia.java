@@ -11,14 +11,40 @@ public class Bestia extends Personaje {
     // #[regen=yes,id=DCE.D14F3E18-3414-B99F-EBD6-405FA8B63AAC]
     // </editor-fold> 
     public Bestia () {
+        setParameters();
+    }
+    
+    @Override
+    protected void setParameters(){
         this.setEnergia(500);
         this.setDefensa(1000);
         this.setFuerza(1000);      
-        Arma a1 = new Mazo();
-        Arma a2 = new Mazo();
-        this.agregarArmas(a1,a2);
+        
+    }
+    public Bestia(Arma a){
+        setParameters();
+        this.setArma(a);
     }
 
-     
+    @Override
+    public int getIdPersonaje() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    
+    public int getEstado() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void dibujar() {
+        this.grafica = new Circulo()
+    }
+
+    public String toString(){
+        String str = super.toString();
+        str+= "Raza: " + "Bestia" + "\n";        
+        return str;
+    }
+
 }
 

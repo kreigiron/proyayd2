@@ -28,5 +28,10 @@ public class Bruto extends Habilidad {
     public void defender () {
     }
 
+    @Override
+    public void defender(Personaje p, Arma m) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
 }
 
