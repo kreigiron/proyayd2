@@ -37,7 +37,7 @@ public class Bestia extends Personaje {
     }
 
     public void dibujar() {
-        this.grafica = new Circulo()
+        this.grafica = new Circulo(1);
     }
 
     public String toString(){

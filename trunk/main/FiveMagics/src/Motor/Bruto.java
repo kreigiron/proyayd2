@@ -5,6 +5,7 @@ import gui.Casilla;
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.6182C211-5614-7920-CBDC-A848A411F650]
 // </editor-fold> 
+/**@deprecated*/
 public class Bruto extends Habilidad {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -30,6 +31,24 @@ public class Bruto extends Habilidad {
 
     @Override
     public void defender(Personaje p, Arma m) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int getIdPersonaje() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    protected void setParameters() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public int getEstado() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void dibujar() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

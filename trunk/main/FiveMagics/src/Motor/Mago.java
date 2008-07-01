@@ -2,9 +2,7 @@ package Motor;
 
 import gui.Casilla; 
 
-// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-// #[regen=yes,id=DCE.29F43B44-3132-CC3F-9F2B-C369C44D4049]
-// </editor-fold> 
+/**@deprecated*/
 public class Mago extends Habilidad {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -17,8 +15,8 @@ public class Mago extends Habilidad {
     // #[regen=yes,id=DCE.0D68540E-F8CD-B8F4-ABAB-F12FFCDFBF3F]
     // </editor-fold> 
     public void atacar (Casilla c) {
-        p.atacar(c);
-        c.getM().defender(this, this.getArma().get(new Integer(1)));
+      // 'p.atacar(c);
+//        c.getM().defender(this, this.getArma().get(new Integer(1)));
         
     }
       
@@ -28,7 +26,25 @@ public class Mago extends Habilidad {
     // </editor-fold> 
     public void defender (Personaje p, Arma m){ 
         
-    }    
+    }
+
+    @Override
+    public int getIdPersonaje() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    protected void setParameters() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public int getEstado() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void dibujar() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 
 }
 

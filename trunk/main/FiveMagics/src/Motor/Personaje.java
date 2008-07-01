@@ -42,7 +42,7 @@ public abstract class Personaje extends javax.swing.JButton implements Movible {
     private Equipo equipo;
 
     /// indica si esta vivo >0 o muerto <=0
-    private int estado;
+    protected int estado = 1;
     
       /**Ataca al movible especificado*/
     public void atacar (Movible enemigo){
@@ -101,7 +101,7 @@ public abstract class Personaje extends javax.swing.JButton implements Movible {
     public void dañar(int puntos) {
         // si no se aguanta el daño, se cambia el estado del personaje a muerto
         if( this.energia <= puntos)
-            this.estado = false;
+            this.estado = 0;
         else // sino solo se baja la energia
             this.energia = this.energia - puntos;
         update(); //actualizamos la grafica
@@ -129,5 +129,11 @@ public abstract class Personaje extends javax.swing.JButton implements Movible {
         str+= "Arma: " + this.arma.toString() + "\n";   
         return str;
     }
+  
+    @Override
+    public JButton getButton() {
+        return this;
+    }
+
 }
 
