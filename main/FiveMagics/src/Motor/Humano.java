@@ -38,9 +38,7 @@ public class Humano extends Personaje {
 
 
 
-    public void update() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+
 
     public int getEstado() {
         return estado;
