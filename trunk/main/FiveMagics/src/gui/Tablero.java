@@ -159,8 +159,10 @@ public class Tablero extends JPanel {
         //System.out.println("Activa "+this.activa.getToolTipText());
         //System.out.println("Anterior "+this.anterior.getToolTipText());
         jugador = SuperFabrica.getFabrica().crearMovible(1, 0, 0, new Casilla());
+        //Color color= jugador.getEquipo().getColor();
         JButton p = (JButton)jugador;
         p.setBounds(15, 15, 15, 15);
+        
         p.setBackground(Color.BLUE);
         p.setToolTipText(p.toString());
         activa.borraPersonaje(anterior);
