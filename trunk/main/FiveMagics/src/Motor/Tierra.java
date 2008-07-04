@@ -48,5 +48,9 @@ public class Tierra extends Elemento {
         return str;
     }
 
+        @Override
+    public java.awt.Color getColor() {
+        return java.awt.Color.DARK_GRAY;
+    }
 }
 

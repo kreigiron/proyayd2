@@ -41,5 +41,9 @@ public class Agua extends Elemento {
         return str;
     }
 
+        @Override
+    public java.awt.Color getColor() {
+        return java.awt.Color.blue;
+    }
 }
 
