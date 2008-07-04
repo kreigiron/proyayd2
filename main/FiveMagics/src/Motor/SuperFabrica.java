@@ -37,7 +37,7 @@ public class SuperFabrica {
     }
     
     /**Clase que fabrica armas*/
-    class FabricaArmas{
+    public class FabricaArmas{
         FabricaArmas(){
             
         }
@@ -59,7 +59,7 @@ public class SuperFabrica {
     }
     
     /**Clase que fabrica personajes*/
-    class FabricaPersonajes{
+   public  class FabricaPersonajes{
         FabricaPersonajes(){            
         }
         /**Fabrica un nuevo personaje*/
@@ -85,7 +85,7 @@ public class SuperFabrica {
     }
     
     /**Clase que fabrica elementos*/
-    class FabricaElementos{
+    public class FabricaElementos{
         FabricaElementos(){
             
         }
