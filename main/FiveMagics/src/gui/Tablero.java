@@ -241,4 +241,21 @@ public class Tablero extends JPanel {
     }
     
     
+    /*Funcion que retorna un numero aleatorio de Raza
+     * esta puede ser Humano, Elfo o Bestia
+     */
+    public int asignaRazaAutomatico(){
+        int x = (int)(Math.random()*3);
+        x++;
+        return x;    
+    }
+    
+    /*Funcion que retorna un numero aleatorio de Raza
+     * esta puede ser Mazo o Espada
+     */
+    public int asignaArmaAutomatico(){
+        int x = (int)(Math.random()*2);
+        x++;
+        return x;    
+    }
 }
