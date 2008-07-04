@@ -1,6 +1,5 @@
 package Motor;
 
-import gui.Casilla; 
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.319353B9-26FD-7A22-6EEB-C9D2947B39A9]
@@ -28,12 +27,12 @@ public class Bestia extends Personaje {
 
     @Override
     public int getIdPersonaje() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return Personaje.BESTIA;        
     }
 
     
     public int getEstado() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return estado;
     }
 
     public void dibujar() {

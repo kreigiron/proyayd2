@@ -10,13 +10,16 @@ public class Equipo {
 
     private Elemento elemento;
 
-    private ArrayList<Personaje> personajes;
+    private ArrayList<Movible> personajes = new ArrayList<Movible>();
 
-    private int color;
+    private int color = 0;
 
     public Equipo () {
     }
 
+    public Equipo (Elemento e) {
+        elemento = e;
+    }
     
     public int getColor () {
         return color;
@@ -35,11 +38,11 @@ public class Equipo {
         this.elemento = val;
     }
 
-    public ArrayList<Personaje> getPersonajes () {
+    public ArrayList<Movible> getPersonajes () {
         return personajes;
     }
 
-    public void setPersonajes (ArrayList<Personaje> val) {
+    public void setPersonajes (ArrayList<Movible> val) {
         this.personajes = val;
     }
 
@@ -51,17 +54,20 @@ public class Equipo {
 //    public void NotificarATodos () {
 //    }
 //
-//    public void Suscribir (Personaje p, Casilla c) {
-//        if(p!= null){
-//            this.personajes.add(p);
-//        }
-//        
-//    }
-//
-//    public void Desuscribir (Personaje p, Casilla c){ 
-//       if(p!= null){
-//            this.personajes.remove(p); 
-//        }
-//    }
+    /**Agrega un personaje a un equipo*/
+    public void agregar (Movible p) {
+        if(p!= null){
+            p.setEquipo(this);
+               this.personajes.add(p);
+        }
+                 
+    }
+ /** Quita un personaje del equipo*/
+    public void quitar (Movible p){ 
+       if(p!= null){
+            this.personajes.remove(p); 
+            p.setEquipo(null);
+        }
+    }
 }
 
