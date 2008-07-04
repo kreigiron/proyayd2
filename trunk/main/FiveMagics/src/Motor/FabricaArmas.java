@@ -10,7 +10,8 @@ package Motor;
  * @author kreig
 Clase que fabrica armas*/
     public class FabricaArmas{
-        FabricaArmas(){
+        
+       public FabricaArmas(){
             
         }
         
