@@ -8,6 +8,7 @@ package gui;
 import java.awt.Color;
 import javax.swing.JPanel;
 import Motor.*;
+import javax.swing.JButton;
 
 /**
  *
@@ -22,29 +23,30 @@ public class Ataque extends Thread {
     static int y = 0;
     Casilla actual;
     Casilla anterior;
-    Movible personajeSystema;
-    JPanel per = new JPanel();
+    JButton personajeSystema;
+    //JPanel per = new JPanel();
     
     public Ataque(Tablero tb, Casilla[][] matriz, Movible mv)
     {
         tab = tb;
+        personajeSystema = (JButton)mv;
         m= matriz;
-        per.setBounds(15, 15, 15, 15);
+        personajeSystema.setBounds(15, 15, 15, 15);
         //per.setBounds(20, 20, 20, 20);
-        per.setBackground(Color.RED);
-        per.setToolTipText("Matando \n a cualquier hijo de la tostada");
-        personajeSystema = mv;
+        personajeSystema.setBackground(Color.RED);
+        personajeSystema.setToolTipText(mv.toString());
+       
   
     }
     
     public void setPersonajeSystema(Movible _personajeSystema)
     {
-        personajeSystema = _personajeSystema;
+        personajeSystema = (JButton)_personajeSystema;
     }
     
     public Movible getPersonajeSystema()
     {
-        return personajeSystema;
+        return (Movible)personajeSystema;
     }
     
     public void run()
@@ -57,7 +59,7 @@ public class Ataque extends Thread {
               x = (int)(Math.random()*10);
               y = (int)(Math.random()*10);
               actual = m[x][y];
-              actual.pintaPersonaje(per);
+              actual.pintaPersonaje(personajeSystema);
               System.out.println(x +"-" +y);
               sleep(5000);
             }
