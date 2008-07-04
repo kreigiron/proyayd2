@@ -2,6 +2,7 @@ package gui;
 
 import Motor.*;
 import java.awt.Color;
+import java.awt.Color;
 import java.util.ArrayList;
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -189,8 +190,8 @@ public class Tablero extends JPanel {
                 matriz[x][y].setPosY(y);
                 matriz[x][y].setTerreno(new Terreno());
                 String info = matriz[x][y].getTerreno().getE().toString();
-                //String info = "abc";
-                
+                Color color= matriz[x][y].getTerreno().getE().getColor();
+                matriz[x][y].setBackground(color);
                 matriz[x][y].setToolTipText(info);
             }
         }
@@ -232,4 +233,6 @@ public class Tablero extends JPanel {
         this.activa = matriz[0][0];
         this.anterior = matriz[0][0];
     }
+    
+    
 }

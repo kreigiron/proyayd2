@@ -140,5 +140,8 @@ public class Casilla extends JPanel {
 // TODO add your handling code here:
         requestFocus();
     }
+    
+   
+    
 }
 
