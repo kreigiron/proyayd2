@@ -30,9 +30,11 @@ public class Terreno {
     // </editor-fold> 
     public Terreno() {
         //cantidad de elementos
-        int cantidad = 3;
+        int cantidad = 9;
         int ele = (int) (Math.random() * cantidad);
-        //e = 
+        FabricaElementos fe = new FabricaElementos();
+        e = fe.crearElemento(ele);
+        
 
     }
 
