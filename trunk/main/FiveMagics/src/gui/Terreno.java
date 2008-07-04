@@ -33,9 +33,7 @@ public class Terreno {
         int cantidad = 4;
         int ele = (int) (Math.random() * cantidad);
         FabricaElementos fe = new FabricaElementos();
-        e = fe.crearElemento(ele);
-        
-
+        e = fe.crearElemento(ele);        
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
