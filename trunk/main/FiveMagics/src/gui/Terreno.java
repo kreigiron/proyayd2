@@ -1,10 +1,9 @@
 package gui;
 
-
-import Motor.*; 
+import Motor.*;
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-import Motor.SuperFabrica;
+//import Motor.SuperFabrica.FabricaElementos;
 // #[regen=yes,id=DCE.9F7AAAA7-99E9-694B-6E5C-D81F4D21BAC9]
 // </editor-fold> 
 public class Terreno {
@@ -29,25 +28,26 @@ public class Terreno {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.A96D663E-4F85-CA9F-BC4A-16DE69687938]
     // </editor-fold> 
-    public Terreno () {
-        e = new Agua();
+    public Terreno() {
+        //cantidad de elementos
+        int cantidad = 3;
+        int ele = (int) (Math.random() * cantidad);
+        //e = 
+
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.7FF74B82-143E-7E55-8F31-22F57B7DA6A2]
     // </editor-fold> 
-    public Elemento getE () {
+    public Elemento getE() {
         return e;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.F081B4CE-0056-6731-B13A-9E6FF781AF26]
     // </editor-fold> 
-    public void setE (Elemento val) {
+    public void setE(Elemento val) {
         this.e = val;
     }
-    
-    
-
 }
 

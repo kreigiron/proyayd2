@@ -100,6 +100,7 @@ public class Casilla extends JPanel {
     //agregando metodos para pintar el personaje
     public void pintaPersonaje(Component personaje) {
         this.add(personaje);
+        //this.setToolTipText(personaje.toString());
         this.repaint();
     }
 
