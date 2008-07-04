@@ -122,7 +122,7 @@ public abstract class Personaje extends javax.swing.JButton implements Movible {
     @Override
     public String toString(){
         String str = new String();
-        str+= "Equipo: " + this.equipo.toString() + "\n";
+       // str+= "Equipo: " + this.equipo.toString() + "\n";
         str+= "Energia: " + this.energia + "\n";
         str+= "Defensa: " + this.defensa  + "\n";
         str+= "Ataque: " + this.fuerza + "\n";   

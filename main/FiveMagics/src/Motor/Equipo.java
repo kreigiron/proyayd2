@@ -43,6 +43,10 @@ public class Equipo {
         this.personajes = val;
     }
 
+    public String toString(){
+        return "equipo" + color;
+    }
+    
    
 //    public void NotificarATodos () {
 //    }
