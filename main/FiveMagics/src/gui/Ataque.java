@@ -30,6 +30,7 @@ public class Ataque extends Thread {
         tab = tb;
         m= matriz;
         per.setBounds(15, 15, 15, 15);
+        //per.setBounds(20, 20, 20, 20);
         per.setBackground(Color.RED);
         per.setToolTipText("Matando \n a cualquier hijo de la tostada");
         personajeSystema = mv;
