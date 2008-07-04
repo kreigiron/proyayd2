@@ -162,6 +162,7 @@ public class Tablero extends JPanel {
         JButton p = (JButton)jugador;
         p.setBounds(15, 15, 15, 15);
         p.setBackground(Color.BLUE);
+        p.setToolTipText(p.toString());
         activa.borraPersonaje(anterior);
         activa.pintaPersonaje(p);
     }
