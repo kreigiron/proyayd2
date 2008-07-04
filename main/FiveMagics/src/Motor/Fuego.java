@@ -1,5 +1,7 @@
 package Motor;
 
+import java.awt.Color;
+
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.67F06992-FFC1-28BA-943B-A914C92F2992]
@@ -52,6 +54,11 @@ public class Fuego extends Elemento {
             str= super.toString();
         str+= " Elemento: Fuego ";        
         return str;
+    }
+
+    @Override
+    public Color getColor() {
+        return java.awt.Color.RED;
     }
 }
 

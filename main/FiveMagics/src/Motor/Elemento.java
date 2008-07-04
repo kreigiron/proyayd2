@@ -14,6 +14,7 @@ public abstract class Elemento extends Arma {
     public static final int VIENTO = 4;
         
     
+    
     private Arma arma;
 
     public Elemento () {
@@ -56,5 +57,8 @@ public abstract class Elemento extends Arma {
         else
             enemigo.dañar((enemigo.getDefensa()/arma.getFactorAtaque()));        
     }
+    
+    /**Devuelve color propio de cada elemento*/
+    public abstract java.awt.Color getColor();
 }
 
