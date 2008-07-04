@@ -8,6 +8,7 @@ import java.util.ArrayList;
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 import javax.swing.GroupLayout.ParallelGroup;
 import javax.swing.GroupLayout.SequentialGroup;
+import javax.swing.JButton;
 import javax.swing.JPanel;
 // #[regen=yes,id=DCE.8621BE25-041D-3601-79CB-E7FC72F09EFF]
 // </editor-fold> 
@@ -50,7 +51,8 @@ public class Tablero extends JPanel {
     int col = 10;
     Thread hilo;
     Casilla[][] matriz = new Casilla[fil][col];
-    Movible mv;
+    Movible mv;//el que esta en automatico
+    Movible jugador;//el jugador
     public Casilla activa;
     public Casilla anterior;
     //public Personaje personaje;
@@ -156,7 +158,8 @@ public class Tablero extends JPanel {
         this.activa = (Casilla) evt.getComponent();
         //System.out.println("Activa "+this.activa.getToolTipText());
         //System.out.println("Anterior "+this.anterior.getToolTipText());
-        JPanel p = new JPanel();
+        jugador = SuperFabrica.getFabrica().crearMovible(1, 0, 0, new Casilla());
+        JButton p = (JButton)jugador;
         p.setBounds(15, 15, 15, 15);
         p.setBackground(Color.BLUE);
         activa.borraPersonaje(anterior);
