@@ -10,7 +10,7 @@ package Motor;
  * @author kreig
  *Clase que fabrica elementos*/
     public class FabricaElementos{
-        FabricaElementos(){
+        public FabricaElementos(){
             
         }
         

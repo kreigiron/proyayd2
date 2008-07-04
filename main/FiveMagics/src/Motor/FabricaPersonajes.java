@@ -10,7 +10,7 @@ import   gui.*;
  * @author kreig
    Clase que fabrica personajes*/
    public  class FabricaPersonajes{
-        FabricaPersonajes(){            
+        public FabricaPersonajes(){            
         }
         /**Fabrica un nuevo personaje*/
         public Personaje crearPersonaje(int raza, Arma a, Casilla inicial){
