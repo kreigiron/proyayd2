@@ -33,6 +33,16 @@ public abstract class Elemento extends Arma {
     public abstract int getElemId();
     
     @Override
+    public Arma getArma(){
+        return arma;
+    }
+    
+    @Override
+    public void setArma(Arma a){
+        arma = a;
+    }
+    
+    @Override
     public void atacar (Movible enemigo){        
         // si el elemento es fuerte ante el elemento del equipo del enemigo, se hace el doble de daño
         if(this.fuerteAnte() == enemigo.getEquipo().getElemento().getElemId()){            
