@@ -20,10 +20,10 @@ public class Fuego extends Elemento {
         super(m);
     }
     
-    @Override
-    public void atacar(Movible m){
-            
-    }
+//    @Override
+//    public void atacar(Movible m){
+//            
+//    }
 
     @Override
     public int fuerteAnte() {
