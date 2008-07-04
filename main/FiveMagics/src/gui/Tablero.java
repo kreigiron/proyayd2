@@ -76,7 +76,7 @@ public class Tablero extends JPanel {
         Arma ar = new Espada();
         mv = new Bestia(ar);
         //mira esto
-        mv = SuperFabrica.getFabrica().crearMovible(1, 0, 0, new Casilla()); 
+        //mv = SuperFabrica.getFabrica().crearMovible(1, 0, 0, new Casilla()); 
     }
     
     public void inicio() {
