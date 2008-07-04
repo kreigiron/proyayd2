@@ -103,7 +103,7 @@ public class Tablero extends JPanel {
        if(cxc == cx && cyc > cy)
        {
            System.out.println("atacando arriba exito");
-           mv.atacar(mvh);
+           //mv.atacar(mvh);
        }
        else
        {
