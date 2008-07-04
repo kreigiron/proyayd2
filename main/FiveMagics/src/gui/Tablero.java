@@ -73,10 +73,7 @@ public class Tablero extends JPanel {
 
     public void agregarPersonaje()
     {
-        Arma ar = new Espada();
-        mv = new Bestia(ar);
-        //mira esto
-        //mv = SuperFabrica.getFabrica().crearMovible(1, 0, 0, new Casilla()); 
+        mv = SuperFabrica.getFabrica().crearMovible(1, 0, 0, new Casilla()); 
     }
     
     public void inicio() {
@@ -191,8 +188,9 @@ public class Tablero extends JPanel {
                 matriz[x][y].setPosX(x);
                 matriz[x][y].setPosY(y);
                 matriz[x][y].setTerreno(new Terreno());
-                //String info = matriz[x][y].getTerreno().getE().toString();
-                String info = "abc";
+                String info = matriz[x][y].getTerreno().getE().toString();
+                //String info = "abc";
+                
                 matriz[x][y].setToolTipText(info);
             }
         }
