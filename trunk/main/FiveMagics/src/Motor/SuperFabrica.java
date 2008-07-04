@@ -111,5 +111,26 @@ public class SuperFabrica {
             p.setArma(a);
             return p;
         }        
+        
+        public Elemento crearElemento( int tipoElemento){
+             Elemento p;
+            switch (tipoElemento){
+                case Elemento.AGUA:
+                    p = new Agua();
+                        break;
+                case Elemento.FUEGO:
+                    p =  new Fuego();
+                        break;                
+                case Elemento.TIERRA:
+                    p =  new Tierra();
+                        break;                
+//                case Elemento.VIENTO:
+//                    p =  new Viento();
+//                        break;                
+                default:
+                    p = new Agua();
+            }
+            return p;
+        }        
     }    
 }
