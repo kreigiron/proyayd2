@@ -23,6 +23,7 @@ public class Ataque extends Thread {
     Casilla actual;
     Casilla anterior;
     JButton personajeSystema;
+    Movible mvs;
     //JPanel per = new JPanel();
     
     public Ataque(Tablero tb, Casilla[][] matriz, Movible mv)
@@ -34,8 +35,7 @@ public class Ataque extends Thread {
         //per.setBounds(20, 20, 20, 20);
         personajeSystema.setBackground(Color.RED);
         personajeSystema.setToolTipText(mv.toString());
-       
-  
+        mvs = mv;
     }
     
     public void setPersonajeSystema(Movible _personajeSystema)
@@ -59,6 +59,8 @@ public class Ataque extends Thread {
               y = (int)(Math.random()*10);
               actual = m[x][y];
               actual.pintaPersonaje(personajeSystema);
+              m[x][y].getTerreno().getE().atacar(mvs);
+              personajeSystema.setToolTipText(mvs.toString());
               System.out.println(x +"-" +y);
               sleep(5000);
             }

@@ -98,12 +98,18 @@ public abstract class Personaje extends javax.swing.JButton implements Movible {
         this.fuerza = fuerza;
     }
     
+    public void revitalizar(int puntos){
+        this.energia += puntos;
+        update();  //actualizamos la grafica
+    }
+    
     public void dañar(int puntos) {
         // si no se aguanta el daño, se cambia el estado del personaje a muerto
         if( this.energia <= puntos)
             this.estado = 0;
         else // sino solo se baja la energia
             this.energia = this.energia - puntos;
+        System.out.println("Nueva energia: " + this.energia);
         update(); //actualizamos la grafica
     }
 

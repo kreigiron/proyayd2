@@ -45,17 +45,25 @@ public abstract class Elemento extends Arma {
     
     @Override
     public void atacar (Movible enemigo){        
-        // si el elemento es fuerte ante el elemento del equipo del enemigo, se hace el doble de daño
-        if(this.fuerteAnte() == enemigo.getEquipo().getElemento().getElemId()){            
-            enemigo.dañar((enemigo.getDefensa()/arma.getFactorAtaque())*2);        
+        if (arma == null){
+            // si el elemento es fuerte ante el elemento del equipo del enemigo, se hace el doble de daño
+            if(this.fuerteAnte() == enemigo.getEquipo().getElemento().getElemId())        
+                enemigo.dañar(10);        
+            // si el elemento es debil ante el elemento del equipo del enemigo, se hace la mitdad de daño
+            else if(this.debilAnte() == enemigo.getEquipo().getElemento().getElemId())
+                enemigo.revitalizar(10);
+                
+        }else{
+            // si el elemento es fuerte ante el elemento del equipo del enemigo, se hace el doble de daño
+            if(this.fuerteAnte() == enemigo.getEquipo().getElemento().getElemId())        
+                enemigo.dañar((enemigo.getDefensa()/arma.getFactorAtaque())*2);        
+            // si el elemento es debil ante el elemento del equipo del enemigo, se hace la mitdad de daño
+            else if(this.debilAnte() == enemigo.getEquipo().getElemento().getElemId())
+                enemigo.dañar((enemigo.getDefensa()/arma.getFactorAtaque())/2);        
+            // sino, solamente hace daño normal
+            else
+                enemigo.dañar((enemigo.getDefensa()/arma.getFactorAtaque()));        
         }
-        // si el elemento es debil ante el elemento del equipo del enemigo, se hace la mitdad de daño
-        else if(this.debilAnte() == enemigo.getEquipo().getElemento().getElemId()){
-            enemigo.dañar((enemigo.getDefensa()/arma.getFactorAtaque())/2);        
-        }
-        // sino, solamente hace daño normal
-        else
-            enemigo.dañar((enemigo.getDefensa()/arma.getFactorAtaque()));        
     }
     
     /**Devuelve color propio de cada elemento*/

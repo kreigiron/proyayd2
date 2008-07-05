@@ -15,6 +15,9 @@ public interface Movible {
 
     /**Recibe puntos de daño*/
     public void dañar (int puntos);
+    
+    /*Recupera los puntos de vida dentro del topico en el que se encuentre*/
+    public void revitalizar(int puntos);
 
     /**Actualiza su estado dentro del topico en el que esté*/
     public void update();

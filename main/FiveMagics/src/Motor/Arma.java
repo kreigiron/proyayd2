@@ -33,7 +33,9 @@ public class Arma implements Movible{
         /**Ataca al movible especificado*/
     @Override
     public void atacar (Movible enemigo){        
-        enemigo.dañar(enemigo.getDefensa()/getFactorAtaque());        
+        //Si el arma es mas fuerte que la defensa que tiene el arma del enemigo
+        if (this.factorAtaque > enemigo.getArma().factorAtaque)
+            enemigo.dañar(this.alcance);
     }
 
     /**Recibe puntos de daño*/
@@ -74,6 +76,10 @@ public class Arma implements Movible{
     public void setFactorAtaque(int factorAtaque) {
         this.factorAtaque = factorAtaque;
     }
+    
+    public void setAlcance(int alcance){
+        this.alcance = alcance;
+    }
 
     public JButton getButton() {
         throw new UnsupportedOperationException("Not supported yet.");
@@ -101,6 +107,10 @@ public class Arma implements Movible{
     }
     @Override
     public Casilla getCasilla() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void revitalizar(int puntos) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 }

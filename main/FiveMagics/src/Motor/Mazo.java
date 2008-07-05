@@ -10,7 +10,8 @@ public class Mazo extends Arma {
     // #[regen=yes,id=DCE.C7578833-3B08-91DA-B7EE-469227F32622]
     // </editor-fold> 
     public Mazo () {
-        this.setFactorAtaque(2);
+        this.setFactorAtaque(5);
+        this.setAlcance(2);
     }    
 
     @Override
