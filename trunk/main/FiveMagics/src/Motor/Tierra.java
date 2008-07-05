@@ -44,7 +44,7 @@ public class Tierra extends Elemento {
         }
         else
             str= super.toString();
-        str+= " Elemento: Agua ";        
+        str+= " Elemento: Tierra ";        
         return str;
     }
 

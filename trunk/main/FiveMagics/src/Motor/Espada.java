@@ -8,6 +8,7 @@ public class Espada extends Arma {
 
     public Espada () {
         this.setFactorAtaque(3);
+        this.setAlcance(5);
     }
     @Override
     public String toString(){
