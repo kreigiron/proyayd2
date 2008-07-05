@@ -6,7 +6,6 @@
 package gui;
 
 import java.awt.Color;
-import javax.swing.JPanel;
 import Motor.*;
 import javax.swing.JButton;
 

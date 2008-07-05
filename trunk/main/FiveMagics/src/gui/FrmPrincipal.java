@@ -7,8 +7,6 @@
 package gui;
 
 //import com.sun.java.util.jar.pack.Attribute.Layout;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 /**
  *

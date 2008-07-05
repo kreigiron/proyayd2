@@ -25,7 +25,10 @@ public class Tablero extends JPanel {
     public Tablero() {
         this.pintar();
         this.inicio();
+        e1.setElemento(SuperFabrica.getFabrica().creaElemento());   //Se crean los elementos para cada equipo
+        e2.setElemento(SuperFabrica.getFabrica().creaElemento());
         //buscar
+        //mv.setArma(new FabricaArmas().crearArma(this.asignaArmaAutomatico()));
         hilo = new Ataque(this, matriz, mv);
         hilo.start();
     }
@@ -53,6 +56,10 @@ public class Tablero extends JPanel {
     Casilla[][] matriz = new Casilla[fil][col];
     Movible mv;//el que esta en automatico
     Movible jugador;//el jugador
+    
+    Equipo e1 = new Equipo();
+    Equipo e2 = new Equipo();
+    
     public Casilla activa;
     public Casilla anterior;
     //public Personaje personaje;
@@ -74,9 +81,10 @@ public class Tablero extends JPanel {
         activa = _activa;
     }
 
-    public void agregarPersonaje()
-    {
-        mv = SuperFabrica.getFabrica().crearMovible(1, 0, 0, new Casilla()); 
+    public void agregarPersonaje(){
+        mv = SuperFabrica.getFabrica().crearMovible(asignaRazaAutomatico(), asignaArmaAutomatico(), asignaElementoArmaAutomatico(), new Casilla()); 
+        e1.getPersonajes().add(mv);
+        mv.setEquipo(e1);
     }
     
     public void inicio() {
@@ -92,6 +100,7 @@ public class Tablero extends JPanel {
             //}
         });
         this.agregarPersonaje();
+        
     }
 
     public void atacarArriba(int cxc, int cyc) {
@@ -100,27 +109,22 @@ public class Tablero extends JPanel {
        int cy = a.getY();
        Movible mvh = a.getPersonajeSystema();
        
-       if(cxc == cx && cyc > cy)
-       {
+       if(cxc == cx && cyc > cy){
+           mv.atacar(mvh);
            System.out.println("atacando arriba exito");
-           //mv.atacar(mvh);
-       }
-       else
-       {
+       }else
            System.out.println("atacando arriba fallado");
-       }
     }
     
     public void atacarAbajo(int cxc, int cyc) {
        Ataque a = (Ataque)hilo;
        int cx = a.getX();
        int cy = a.getY();
-       if(cxc == cx && cyc < cy)
-       {
+       Movible mvh = a.getPersonajeSystema();
+       if(cxc == cx && cyc < cy){
+           mv.atacar(mvh);
            System.out.println("atacando abajo exito");
-       }
-       else
-       {
+       }else{
            System.out.println("atacando abajo fallado");
        }
     }
@@ -129,12 +133,11 @@ public class Tablero extends JPanel {
        Ataque a = (Ataque)hilo;
        int cx = a.getX();
        int cy = a.getY();
-       if(cyc == cy && cxc > cx)
-       {
+       Movible mvh = a.getPersonajeSystema();
+       if(cyc == cy && cxc > cx){
+           mv.atacar(mvh);
            System.out.println("atacando izquierda exito");
-       }
-       else
-       {
+       }else{
            System.out.println("atacando izquierda fallado");
        }
     }
@@ -143,12 +146,11 @@ public class Tablero extends JPanel {
        Ataque a = (Ataque)hilo;
        int cx = a.getX();
        int cy = a.getY();
-       if(cyc == cy && cxc < cx)
-       {
+       Movible mvh = a.getPersonajeSystema();
+       if(cyc == cy && cxc < cx){
+           mv.atacar(mvh);
            System.out.println("atacando derecha exito");
-       }
-       else
-       {
+       }else{
            System.out.println("atacando derecha fallado");
        }
     }
@@ -158,7 +160,8 @@ public class Tablero extends JPanel {
         this.activa = (Casilla) evt.getComponent();
         //System.out.println("Activa "+this.activa.getToolTipText());
         //System.out.println("Anterior "+this.anterior.getToolTipText());
-        jugador = SuperFabrica.getFabrica().crearMovible(1, 0, 0, new Casilla());
+        //jugador = SuperFabrica.getFabrica().crearMovible(1, 0, 0, new Casilla());
+        jugador = SuperFabrica.getFabrica().crearMovible(asignaRazaAutomatico(),asignaArmaAutomatico(), asignaElementoArmaAutomatico(), new Casilla());
         //Color color= jugador.getEquipo().getColor();
         JButton p = (JButton)jugador;
         p.setBounds(15, 15, 15, 15);
@@ -246,7 +249,6 @@ public class Tablero extends JPanel {
      */
     public int asignaRazaAutomatico(){
         int x = (int)(Math.random()*3);
-        x++;
         return x;    
     }
     
@@ -255,7 +257,11 @@ public class Tablero extends JPanel {
      */
     public int asignaArmaAutomatico(){
         int x = (int)(Math.random()*2);
-        x++;
         return x;    
+    }
+    
+    public int asignaElementoArmaAutomatico(){
+        int x = (int) (Math.random() * 2);
+        return x;
     }
 }
