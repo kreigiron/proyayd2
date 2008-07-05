@@ -28,6 +28,19 @@ public class SuperFabrica {
         m = p;
         return m;
     }
+    
+    public Elemento creaElemento(){
+        int x = (int) (Math.random() * 2);
+        Elemento e = null;
+        if (x== 0)
+            e = new Fuego();
+        else if (x == 1)
+            e = new Agua();
+        else if (x == 2)
+            e = new Tierra();
+        return e;
+    }
+    
     /**Singleton para la fabrica*/
     public static SuperFabrica getFabrica(){
         if(fabrica == null){
