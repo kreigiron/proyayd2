@@ -1,0 +1,1 @@
+An Strategy game made for the university. It heavely uses some design patters to simplify the design, and to accelerate the development.
